@@ -9,9 +9,10 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
 
 ## Whats on the Exam?
 * [Domain 1: Cloud Concepts](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-cloud-concepts)
-  * 1.1 Define the AWS Cloud and its value proposition
-  * 1.2 Identify aspects of AWS Cloud economics
-  * 1.3 List the different cloud architecture design principles
+  * [1.1 Define the AWS Cloud and its value proposition]((https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-cloud-concepts))
+  * [1.2 Identify aspects of AWS Cloud economics](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#benfits-of-cloud-computing)
+  * [1.3 List the different cloud architecture design principles](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#types-of-cloud-computing)
+  * [Domain 1 Study Questions and Review](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-study-questions)
 * Domain 2: Security and Compliance
   * 2.1 Define the AWS shared responsibility model
   * 2.2 Define AWS Cloud security and compliance concepts
@@ -72,22 +73,6 @@ Compliance burden - With every new datacenter you bring online, you have to have
   * Private "on prem" - Cloud-like platform in a private datacenter. Scalable like AWS but in your own datacenter. 
   * Hybrid - You're leveraging the public cloud but the public cloud applications work in tandem with a private cloud within their own datacenter. 
   
-#### Cloud Computing Scenarios
-* Scenario 1
-   * Company A - Runs several production workloads within its datacenter. They use VMware to manage the infrastructure in the datacenter. They want to use AWS and integrate it in with their some of their datacenter workload (using the two in tandem). 
-   * Which cloud deployment model would this company be following? 
-      * Hybrid Cloud
- 
-* Scenario 2
-   * Company B - They are trying to decice whether to fund a new line of business and look at ways to monetize a new emerging technology. The new line of business will require some new infrastructure, beyond what they currently have. 
-   * What benefit of cloud computing would be most relevant to Company B?
-      * Pay as you go 
-  
-* Scenario 3
-   * Company C - They have a new CTO at their insurance company. This is a medium-sized business.  They are considering moving to the cloud instead of colocating servers (which means they are renting space in another datacenter). They want to make sure they have the maximum control of their cloud servers and they want to that for security and compliance reasons. 
-   * In this case, what cloud computing model would they need to leverage? 
-      * Infrastructure as a Service (Iaas)
- 
 
 #### Domain 1 Study Questions
 
@@ -121,6 +106,21 @@ Compliance burden - With every new datacenter you bring online, you have to have
 1. Which model allows for the deployment of a mixed environment of the previous two options using both a provided cloud alongside a cloud-like platform in a private datacenter?
    1. Hybrid model
   
+  #### Cloud Computing Scenarios
+* Scenario 1
+   * Company A - Runs several production workloads within its datacenter. They use VMware to manage the infrastructure in the datacenter. They want to use AWS and integrate it in with their some of their datacenter workload (using the two in tandem). 
+   * Which cloud deployment model would this company be following? 
+      * Hybrid Cloud
+ 
+* Scenario 2
+   * Company B - They are trying to decice whether to fund a new line of business and look at ways to monetize a new emerging technology. The new line of business will require some new infrastructure, beyond what they currently have. 
+   * What benefit of cloud computing would be most relevant to Company B?
+      * Pay as you go 
+  
+* Scenario 3
+   * Company C - They have a new CTO at their insurance company. This is a medium-sized business.  They are considering moving to the cloud instead of colocating servers (which means they are renting space in another datacenter). They want to make sure they have the maximum control of their cloud servers and they want to that for security and compliance reasons. 
+   * In this case, what cloud computing model would they need to leverage? 
+      * Infrastructure as a Service (Iaas)
 
 
 
