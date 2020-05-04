@@ -8,7 +8,7 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
 * [PluralSight](https://app.pluralsight.com/paths/certificate/aws-certified-cloud-practitioner)
 
 ## Whats on the Exam?
-* Domain 1: Cloud Concepts
+* [Domain 1: Cloud Concepts](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-cloud-concepts)
   * 1.1 Define the AWS Cloud and its value proposition
   * 1.2 Identify aspects of AWS Cloud economics
   * 1.3 List the different cloud architecture design principles
