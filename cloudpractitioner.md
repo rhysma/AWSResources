@@ -26,3 +26,21 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
   * 4.1 Compare and contrast the various pricing models for AWS
   * 4.2 Recognize the various account structures in relation to AWS billing and pricing
   * 4.3 Identify resources available for billing support
+
+### Domain 1: Cloud Concepts
+* Define the AWS Cloud and its value proposition
+
+Traditional datacenters, inside of an organization are expensive - they contain equipment (servers, switches, hardware, etc...) plus the people to manage and maintain it. If you want to expand into a new area or a new geographic region, you're going to have to financial support a new set of equipment and a new datacenter at that location. Obtaining funding through investors or traditional banking requires time. Building things also takes a lot of time. Then once you have the funding to purchase the equipment and have built it, you have to hire people in the new location to manage and maintain it. To continue expanding your business around the globe you would have to continue this process.
+
+You're also adding to your own technical debt. You have to plan financially to not only support future growth of your datacenters but you have to plan for upgrades and replacement of older tech as your datacenter ages.
+
+Forecasting demand is also challenging - we need to understand what are we using now (what kind of capacity do we need) and what are we going to be using in the future (as our business grows). Businesses struggle with knowing how many users they will need to support in the future, how their internal business needs might change and how their market might fluctuate over time. 
+
+When we're looking at traditional data centers, it takes an intial (large) up-front investment to get it up and running. Then there is a time commitment involved for funding and building. As well as the committment to people and technical debt.
+
+Compliance burden - With every new datacenter you bring online, you have to have people who are experienced in security and data auditing to ensure that you are keeping your data safe and that it is held within the guidelines of your business expectations/legal requirements.
+
+* Benfits of Cloud Computing
+1. Key Advantages
+
+
