@@ -50,3 +50,32 @@ Compliance burden - With every new datacenter you bring online, you have to have
    1. Reliability - The AWS global infrastructure is built with reliability in mind and you take advantage of it by default. 
 
 
+* Types of Cloud Computing
+  * What is cloud computing? - AWS says that cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the Internet with pay-as-you-go pricing, and that pricing model is critical to business success. 
+  
+* The Cloud Spectrum
+* Full Control Datacenter ---- Infrastructure as a Service (IaaS) ---- Platform as a Service (PaaS) ---- Software as a Service (Saas)
+
+* Infrastructure as a Service 
+  * Servers in the cloud (virtual servers)  - We have full access to these server
+  * You have to perform your own maintenance
+
+* Platform as a Service
+  * We're given a service that is configured for us and we can deploy our customizations (Wordpress host)
+
+* Software as a Service
+  * Software you use or run as part of your business
+  * Don't have to worry about servers or configuration, it's just provided as a service
+
+
+
+
+
+
+
+
+
+
+
+
+
