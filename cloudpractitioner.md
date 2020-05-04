@@ -124,7 +124,7 @@ Compliance burden - With every new datacenter you bring online, you have to have
 
 
 
-
+### Domain 2: Security and Compliance
 
 
 
