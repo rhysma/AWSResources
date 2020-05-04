@@ -42,5 +42,11 @@ Compliance burden - With every new datacenter you bring online, you have to have
 
 * Benfits of Cloud Computing
 1. Key Advantages
+   1. Trade capital expense for variable expense - We don't have a large investment of equipment initially like we would in a datacenter. In this case, you would get variable expenses based on usage. You don't have to pay for the equipment or installation, etc...you only pay for the time you're using or accessing the equipment. 
+   1. Economies of scale - AWS purchases equipment at a much lower cost due to the volume and quantity they are purchasing from manufacturers. This means that they can buy things much cheaper than your business. Amazon is going to be sure to get the best price for their equipment in a way you cannot. Amazon has the capacity to manage all of the servers at scale and that cost savings gets passed down to the consumer (that's you!). 
+   1. Capacity - Your business no longer has to worry about forecasting capacity. System and server demand in the cloud can either grow or shrink based on your needs. If your business is growing and needs more capacity it is easy to bring up more servers or equipment to support that. If your business is in a slump, you can scale-back your usage to ensure cost savings at that critical time for your business.
+   1. Increased speed and agility - Obtaining funds for a traditional capital purchase such a datacenter or equipment you might need, can be very slow. If your business is growing very quickly you want to be able to support additional users or demand on your services at that time without waiting for traditional methods. This allows your business to compete better in your market. Additionally, what if you want to test a new market or a hypothesis about your users, traditional methods may not allow you to do that quickly. 
+   1. Elasticity - You can aquire resources when you need them and release them when you no longer need them. In the cloud, you want to be able to expand and contract your resources on demand, automatically. AWS has several services available to do this. 
+   1. Reliability - The AWS global infrastructure is built with reliability in mind and you take advantage of it by default. 
 
 
