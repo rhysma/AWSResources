@@ -21,7 +21,7 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
   * 2.2 Define AWS Cloud security and compliance concepts
   * 2.3 Identify AWS access management capabilities
   * 2.4 Identify resources for security support
-  * [Domain 2 Study Questions and Review ](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#cloud-computing-scenarios-1)
+  * [Domain 2 Study Questions and Review ](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-2-cloud-computing-scenarios)
 * Domain 3: Technology
   * 3.1 Define methods of deploying and operating in the AWS Cloud
   * 3.2 Define the AWS global infrastructure
@@ -174,18 +174,37 @@ Compliance burden - With every new datacenter you bring online, you have to have
 
 #### Domain 2 Cloud Computing Scenarios
 
+1. Three primary elements of AWS Global Infrastructure are:
+  1. AWS Regions
+  1. AWS Availability Zones
+  1. AWS Edge Locations
+  
+1. What represents a cluster of data centers in a specific geographic location?
+  1. AWS Region
+ 
+1. What consists of one or more data centers?
+  1. Availability Zone
+  
+1. The acronyn CDN stands for? 
+  1. Content Delivery Network
+  
+1. What are the two services utilized in Edge Locations?
+  1. Amazon CloudFront
+  1. Amazon Route 53
+  
+1. What is the primary purpose of an AWS Edge Location?
+  1. Serve content where it is closet to the end users
+
 * Scenario 1
    * Company A is looking to transition to AWS. They are going to start with a few workloads and then move other workloads to the platform later. Right now, it's a requirement that they store their backup data in multiple geographic areas. 
    * Which element of the AWS Global Infrastructure will best suit this company?
       * Answer - AWS Regions
    
-
 * Scenario 2
    * Company B services content through their site to users all around the globe and they're looking to optimize performance to their users. Now they want to leverage a content delivery network because they've heard that if they can get their content on servers that are closest to their users, this will improve performance. 
    * Which element of the AWS Global Infrastructure will best suit this company?
       * AWS Edge Locations 
    
-
 * Scenario 3
    * Company C is transition out of their legacy applications to AWS and for this specific application, they require an uptime of at least 99.5%. They want to be sure that a single data center outage won't cause disruption for their highly available application. 
    * Which element of the AWS Global Infrastructure will best suit this company?
@@ -205,6 +224,11 @@ Compliance burden - With every new datacenter you bring online, you have to have
   * Company C has a web developer who was given some recent downtime to review moving their site to the cloud because currently they're using their own data center.  Finance is asking for estimate of costs for this transition to AWS. They want to understand how much it would cost per month to run this in the cloud.
   * What approach should be taken to this data to the finance team? 
      * Use the Pricing Calculator to create a report that shows all resources and their AWS costs
+     
+     
+     
+     
+     
     
     
 
