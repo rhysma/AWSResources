@@ -8,6 +8,7 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
 * [PluralSight](https://app.pluralsight.com/paths/certificate/aws-certified-cloud-practitioner)
 * [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
 * [Global Infrastructure Visualization](https://www.infrastructure.aws/)
+* [AWS Pricing Calculator](https://calculator.aws/#/)
 
 ## Whats on the Exam?
 * [Domain 1: Cloud Concepts](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-cloud-concepts)
@@ -16,10 +17,11 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
   * [1.3 List the different cloud architecture design principles](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#types-of-cloud-computing)
   * [Domain 1 Study Questions and Review](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-study-questions)
 * Domain 2: Security and Compliance
-  * 2.1 Define the AWS shared responsibility model
+  * [2.1 Define the AWS shared responsibility model](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#global-infrastructure---regions-and-availability-zones)
   * 2.2 Define AWS Cloud security and compliance concepts
   * 2.3 Identify AWS access management capabilities
   * 2.4 Identify resources for security support
+  * Domain 2 Study Questions and Review 
 * Domain 3: Technology
   * 3.1 Define methods of deploying and operating in the AWS Cloud
   * 3.2 Define the AWS global infrastructure
@@ -151,10 +153,56 @@ Compliance burden - With every new datacenter you bring online, you have to have
    * Allows users to get content from the fastest and best location for them
    
 
-    
-    
-    
-    
+#### Cloud Economics 
+
+* Capitalized Expenditure (CapEx) - When you spend money to buy large and expensive equipment for your business to directly support your company or mission. 
+* Fixed Assets - The equipment purchased through a CapEx
+* Operating Expenditures (OpEx) - The regular day-to-day expenses of your business. Could be things like connectivity costs, utilities, or maintenance. 
+
+* AWS Cost Explorer
+  * Allows you to view and explore your AWS costs, provides breakdowns by service, shows current usage costs and makes monthly projections, gives recommendations for cost optimization. 
+* AWS Budgets 
+   * Budgets allows you to use the data and visualizations from Cost Explorer to plan and track your usage across all Services. Set budgets for the the amount you want to spend on a particular service, or for all services. 
+* TCO Calculator
+   * A projection tool for organizations that are considering moving a workload from their own data center to the cloud. Helps you see what your costs would be with AWS services and make a case for moving to the cloud as well as plan costs. TCO stands for Total Cost of Ownership
+* AWS Pricing Calculator
+   * Allows you to project costs for specific services or workloads in the cloud. 
+
+
+
+#### Cloud Computing Scenarios
+
+* Scenario 1
+   * Company A is looking to transition to AWS. They are going to start with a few workloads and then move other workloads to the platform later. Right now, it's a requirement that they store their backup data in multiple geographic areas. 
+   * Which element of the AWS Global Infrastructure will best suit this company?
+      * Answer - AWS Regions
+   
+
+* Scenario 2
+   * Company B services content through their site to users all around the globe and they're looking to optimize performance to their users. Now they want to leverage a content delivery network because they've heard that if they can get their content on servers that are closest to their users, this will improve performance. 
+   * Which element of the AWS Global Infrastructure will best suit this company?
+      * AWS Edge Locations 
+   
+
+* Scenario 3
+   * Company C is transition out of their legacy applications to AWS and for this specific application, they require an uptime of at least 99.5%. They want to be sure that a single data center outage won't cause disruption for their highly available application. 
+   * Which element of the AWS Global Infrastructure will best suit this company?
+      * AWS Availability Zones
+      
+* Scenario 4
+   * Company A which has multiple departments that work within AWS and finance wants a clean separation of costs between those different departments.  Currently, all of their resources are included within a single AWS account. 
+   * What approach would meet this need for understanding future costs, with minimal effort?
+      * If you didn't want to move a bunch of resources around, you could use Tags
+   
+* Scenario 5
+   * Company B is considering a transition to the cloud, they currently have two physical data center that they own and maintain.  Now the stakeholders are really questioning whether or not this approach to transitiong to the cloud will save them money. 
+   * What approach should be taken to make a case for the cloud and what resources would be used to make that case?
+      * Use TCO Calculator or the new Pricing Calculator to create a report that shows all resources and their AWS costs
+   
+* Scenario 6
+  * Company C has a web developer who was given some recent downtime to review moving their site to the cloud because currently they're using their own data center.  Finance is asking for estimate of costs for this transition to AWS. They want to understand how much it would cost per month to run this in the cloud.
+  * What approach should be taken to this data to the finance team? 
+     * Use the Pricing Calculator to create a report that shows all resources and their AWS costs
     
     
 
