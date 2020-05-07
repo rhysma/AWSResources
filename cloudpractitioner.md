@@ -6,6 +6,8 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
 * [Free Code Camp](https://www.freecodecamp.org/news/awscertified-challenge-free-path-aws-cloud-certifications/)
    * [Free Code Camp Video Course](https://www.youtube.com/watch?v=3hLmDS179YE)
 * [PluralSight](https://app.pluralsight.com/paths/certificate/aws-certified-cloud-practitioner)
+* [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+* [Global Infrastructure Visualization](https://www.infrastructure.aws/)
 
 ## Whats on the Exam?
 * [Domain 1: Cloud Concepts](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-cloud-concepts)
@@ -125,6 +127,37 @@ Compliance burden - With every new datacenter you bring online, you have to have
 
 
 ### Domain 2: Security and Compliance
+
+#### Global Infrastructure - Regions and Availability Zones
+* AWS Regions - Each region is a specific geographic location. Each geographic location has a cluster of data centers that work together. At this time, there are 24.
+   * Some of these are public and some are not available to the public
+   * There have been 5 additional planned regions
+   
+* Availability Zones - Consists of one or more data centers. Usually two zones within each region at minimum.
+   * 76 around the world
+   * Has redundant power, networking, connectivity
+   * AWS tries to ensure there are no single points of failure when it comes to global infrastructure
+   * If something happend at one location, another one would be able to take over it's duties
+   * Currently there are 69 availability zones 
+   * Availability zones exist to provide ongoing and overlapping infrastructure support
+   
+ * High Availability - If you deploy your applications and experiences in the cloud, across multiple avaiilability zones within an AWS Region, then you minimize any single point of failure and ensure constant uptime. 
+ 
+ * Naming Convention for Availability Zones
+    * us-east-2a - means that US for United States, East for the eastern geographic region, the given number determines which data center cluster, the letter designates the availability zone.
+    
+* Edge Locations - Part of the global content delivery network (CDN), specificaly for CloudFront and Route 53
+   * Currently 200 different locations that are edge locations
+   * Allows users to get content from the fastest and best location for them
+   
+
+    
+    
+    
+    
+    
+    
+
 
 
 
