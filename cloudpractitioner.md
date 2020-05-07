@@ -175,25 +175,25 @@ Compliance burden - With every new datacenter you bring online, you have to have
 #### Domain 2 Cloud Computing Scenarios
 
 1. Three primary elements of AWS Global Infrastructure are:
-  1. AWS Regions
-  1. AWS Availability Zones
-  1. AWS Edge Locations
+   1. AWS Regions
+   1. AWS Availability Zones
+   1. AWS Edge Locations
   
 1. What represents a cluster of data centers in a specific geographic location?
-  1. AWS Region
+   1. AWS Region
  
 1. What consists of one or more data centers?
-  1. Availability Zone
+   1. Availability Zone
   
 1. The acronyn CDN stands for? 
-  1. Content Delivery Network
+   1. Content Delivery Network
   
 1. What are the two services utilized in Edge Locations?
-  1. Amazon CloudFront
-  1. Amazon Route 53
+   1. Amazon CloudFront
+   1. Amazon Route 53
   
 1. What is the primary purpose of an AWS Edge Location?
-  1. Serve content where it is closet to the end users
+   1. Serve content where it is closet to the end users
 
 * Scenario 1
    * Company A is looking to transition to AWS. They are going to start with a few workloads and then move other workloads to the platform later. Right now, it's a requirement that they store their backup data in multiple geographic areas. 
