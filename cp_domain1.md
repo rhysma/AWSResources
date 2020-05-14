@@ -1,9 +1,9 @@
 # Domain 1
-* [Domain 1: Cloud Concepts](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-cloud-concepts)
+* [Domain 1: Cloud Concepts](https://github.com/rhysma/AWSResources/blob/master/cp_domain1.md#domain-1-cloud-concepts)
   * [1.1 Define the AWS Cloud and its value proposition]((https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-cloud-concepts))
-  * [1.2 Identify aspects of AWS Cloud economics](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#benfits-of-cloud-computing)
-  * [1.3 List the different cloud architecture design principles](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#types-of-cloud-computing)
-  * [Domain 1 Study Questions and Review](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-1-study-questions)
+  * [1.2 Identify aspects of AWS Cloud economics](https://github.com/rhysma/AWSResources/blob/master/cp_domain1.md#benfits-of-cloud-computing)
+  * [1.3 List the different cloud architecture design principles](https://github.com/rhysma/AWSResources/blob/master/cp_domain1.md#types-of-cloud-computing)
+  * [Domain 1 Study Questions and Review](https://github.com/rhysma/AWSResources/blob/master/cp_domain1.md#domain-1-study-questions)
 
 ### Domain 1: Cloud Concepts
 * Define the AWS Cloud and its value proposition
