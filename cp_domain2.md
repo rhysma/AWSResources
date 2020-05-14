@@ -1,11 +1,11 @@
 # Domain 2
 
 * Domain 2: Security and Compliance
-  * [2.1 Define the AWS shared responsibility model](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#global-infrastructure---regions-and-availability-zones)
+  * [2.1 Define the AWS shared responsibility model](https://github.com/rhysma/AWSResources/blob/master/cp_domain2.md#global-infrastructure---regions-and-availability-zones)
   * 2.2 Define AWS Cloud security and compliance concepts
   * 2.3 Identify AWS access management capabilities
   * 2.4 Identify resources for security support
-  * [Domain 2 Study Questions and Review ](https://github.com/rhysma/AWSResources/blob/master/cloudpractitioner.md#domain-2-cloud-computing-scenarios)
+  * [Domain 2 Study Questions and Review ](https://github.com/rhysma/AWSResources/blob/master/cp_domain2.md#domain-2-cloud-computing-scenarios)
 
 ### Domain 2: Security and Compliance
 
