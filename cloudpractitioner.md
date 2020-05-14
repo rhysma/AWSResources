@@ -13,15 +13,9 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
 ## Whats on the Exam?
 * [Domain 1: Cloud Concepts](https://github.com/rhysma/AWSResources/blob/master/cp_domain1.md)
 * [Domain 2: Security and Compliance](https://github.com/rhysma/AWSResources/blob/master/cp_domain2.md)
-* Domain 3: Technology
-  * 3.1 Define methods of deploying and operating in the AWS Cloud
-  * 3.2 Define the AWS global infrastructure
-  * 3.3 Identify the core AWS services
-  * 3.4 Identify resources for technology support
-* Domain 4: Billing and Pricing
-  * 4.1 Compare and contrast the various pricing models for AWS
-  * 4.2 Recognize the various account structures in relation to AWS billing and pricing
-  * 4.3 Identify resources available for billing support
+* [Domain 3: Technology](https://github.com/rhysma/AWSResources/blob/master/cp_domain3.md)
+* [Domain 4: Billing and Pricing](https://github.com/rhysma/AWSResources/blob/master/cp_domain4.md)
+
 
 
 
