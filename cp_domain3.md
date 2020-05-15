@@ -29,7 +29,21 @@
          * General Purpose (SSD) - default choice, SSD-backed suitable for a large range of uses including small to medium sized databases, development and test environments, boot volumes
          * Provisioned IOPS (SSD) - storage with consistent and low-latency performance, designed for I/O intensive operations such as large relational and NoSQL databases
          * Magnetic  - low cost per GB, ideal for workloads where data is accessed infrequently or applications were the lowest cost option is important. 
-         
+
+### AWS Elastic Beanstalk
+* [Link to Amazon's Documentation](https://aws.amazon.com/elasticbeanstalk/)
+* Key Features
+  * Automates the process of deploying and scaling your workloads on EC2 but you don't have to deal with the servers directly
+  * Supports a specific set of technologies unlike EC2 which is about hardware and storage
+  * Allows you to set up all types of applications using different languages or technologies and get it up and running on a server without having to think about the hardware considerations.
+  * All of the considerations of monitoring, load balancing, provisioning, etc... are handled through EB
+  * Has built-in Health monitoring for your application
+* Different deployment options
+  * Upload your code through the console
+  * Connect through the Elastic Beanstalk CLI
+  * Connector for Visual Studio
+  * Connect for Eclipse 
+
 
    
    
