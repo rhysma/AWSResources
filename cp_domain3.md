@@ -15,7 +15,9 @@
    
 ## Core Services
 
-### Amazon EC2
+### Compute Services
+
+#### Amazon EC2
 * [Link to Amazon's documentation](https://aws.amazon.com/ec2/)
 * Different types of instances based on need
    * General, Compute, Memory, Accelerated, and Storage optimized
@@ -30,7 +32,7 @@
          * Provisioned IOPS (SSD) - storage with consistent and low-latency performance, designed for I/O intensive operations such as large relational and NoSQL databases
          * Magnetic  - low cost per GB, ideal for workloads where data is accessed infrequently or applications were the lowest cost option is important. 
 
-### AWS Elastic Beanstalk
+#### AWS Elastic Beanstalk
 * [Link to Amazon's Documentation](https://aws.amazon.com/elasticbeanstalk/)
 * Key Features
   * Automates the process of deploying and scaling your workloads on EC2 but you don't have to deal with the servers directly
@@ -43,6 +45,63 @@
   * Connect through the Elastic Beanstalk CLI
   * Connector for Visual Studio
   * Connect for Eclipse 
+  
+#### AWS Lambda
+* [Link to Amazon's Documentation](https://aws.amazon.com/lambda/)
+* Key Features
+   * You don't have to think about managing or provisioning servers
+   * Only pay for compute time that your application consumes - you are charged based on the number of requets for your functions and the duration of time it takes for code to execute 
+   * Can run code for virtually any type of application or backend service - zero administration
+   * Choose to have 128 and 3000 megabytes allocated for your functions
+   * Great for serving HTTP request via Amazon API Gateway, modificiation to objects in S3 buckets, tables updates to DynamoDB, Echo/Alexa Skills
+* Benefits
+  * Reduced maintenance requirements 
+  * We don't have to worry about underlying servers and keep them up to date
+  * Enables fault tolerance without having to think about it or build it in
+  * Runs across multiple availability zones so no single point of failure can take down your application
+  * Scales based on demand
+  
+### Content and Network Delivery Services
+
+#### Amazon VPC and Direct Connect
+
+#### Route53
+
+#### Elastic Load Balancing
+
+#### CloudFront and API Gateway
+
+### File Storage Services
+
+#### Amazon S3
+
+#### Glacier and Glacier Deep Archive
+
+#### Elastic Block Store
+
+#### Elastic File System
+
+#### AWS Snowball
+
+### Database Services
+
+#### Relational Database Service
+
+#### DynamoDB
+
+#### Elasticache and Redshift 
+
+### App Integration Services
+
+#### AWS Messaging 
+
+#### AWS Step Functions
+
+## Scenario Review Questions
+
+  
+   
+   
 
 
    
