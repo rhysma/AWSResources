@@ -229,6 +229,34 @@
     * Which scaling approach would you recommend and what services should they use?
     * Answer - Elastic Load Balancing, Horizontal Scaling method
    
+ ### File Stoage Services Scenarios
+ 1. Business A - Launched a site that offers daily tutorials for developers. They use S3 to store the assets needed per tutorial. These assets are very popular within the week the tutorial is launched. After this initial week, these assets are rarely accessed.
+    * How can Business A reduce their S3 costs while maintaining durability?
+    * Answer - Setup S3 lifecycle rule that moves from Standard to Standard-IA storage
+    
+1. Business B - Is a social networking company and they are moving to AWS. They have 2PB of user-generated content that they need to migrate. They are trying to determine if there is a faster way to move the data than uploading over the Internet.
+   * Would there be an approach you would recommend?
+   * Answer - AWS Snowball
+   
+1. Business C - Is a company that produces a messaging app. They are looking for a shared file system between 8 different Linux EC2 instances. The file system would need to support roughly 1PB of data. 
+   * What approach would you recommend? 
+   * Answer - Elastic File System 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
    
 
 
