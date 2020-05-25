@@ -150,12 +150,43 @@
    
 #### Elastic Block Store (EBS)
  * [Documentation](https://aws.amazon.com/ebs)
- * High-performance block storage designed for use with EC2
+ * EBS is a high-performance block storage designed for use with EC2.  Provides for both throughput and transaction intensive workloads at any scale. 
+    * Redundancy within an Availability Zone
+    * Allows you to take snapshots of its data
+    * Offers encryption of its volumes
+    
+ * Multiple Volume Types
+    * General Purpose SSD - Cost effective type designed for general workloads, standard/default 
+    * Provisioned IOPS SSD - High performance volume for low latency appllications, best for intensive database or application workloads, data warehouse workloads, HBase, Vertica, Cassandra
+    * Throughput Optimized HDD - Designed for frequetly accessed data, provides the lowest cost per GB of all EBS volumes with ongoing workloads
+    * Cold HDD - Less frequently accessed workloads, the lowest cost option for all EBS.
+    
 
-#### Elastic File System
+#### Elastic File System (EFS)
+ * [Documentation] (https://aws.amazon.com/efs/?nc2=type_a)
+ * Fully managed NFS File system, designed for Linux workloads
+ * Supports up to petabyte scale
+ * Stores across multiple Availability Zones
+ * Provides configurable lifecycle data rules
+ 
+ * Two different storage classes
+    * Standard - General/default option for file storage
+    * Infrequent access - Cost-optimization for files accessed less frequently
+    
 
-#### AWS Snowball
-
+#### AWS Snowball and Snowmobile 
+ * [Documentation] (https://aws.amazon.com/snowball/?nc2=type_a)
+  * Snowball - A service to physically migrate petabyte scacle data to AWS
+     * Block storage and S3 compatible 
+     * 40 Virtual CPUs 
+     * Suited for local storage and large-scale data transfer
+     * Snowball Edge - Compute Optimized device that provides 52 Virtual CPUs, block and object storage, and option GPU
+     
+  * Snowmobile - Service to physically migrate exabyte scale data onto AWS
+     * [Documentation](https://aws.amazon.com/snowmobile/?nc2=type_a)
+     * Allows you to move extremely large amount of data to AWS
+     * You can transfer up to 100PB per Snowmobile 
+     * The Snowmobile is a 45-foot long, ruggedized shipping container pulled by a semi-truck
 
 ### Database Services
 
