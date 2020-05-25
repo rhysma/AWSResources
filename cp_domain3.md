@@ -108,14 +108,54 @@
 ### File Storage Services
 
 #### Amazon S3
+ * [Documentation](https://aws.amazon.com/s3/?nc2=type_a)
+ * S3 - Simple Storage Service 
+    * Object storage service that offers scalability, data availability, security, and performance
+    * Object Storage - Allows you to store objects inside of buckets
+    * Enables URL access for files
+    * Offers configurable rules for your data lifecycle
+    * Can serve as a static website host
+    
+ * S3 Storage Classes
+    * General Purpose (non-archival storage classes)
+       * S3 Standard - high availability, high durability, performance object storage for frequently accessed data.  Appropriate for a wide variety of use cases
+       * S3 Intelligent-Tiering -  Will move your data to the correct storage class based on usage so if you're not sure which one to use, choose this and it will move the data to the most cost-optimized location. 
+      * S3 Standard-IA (Infrequent Access) - This is for infrequently accessed data with the standard resilience. 
+      * One Zone-IZ (Infrequent Access) - This is for infrequently accessed data that is only stored in one availability zone. Good for things like secondary backup copies of on-prem data or easily re-creatable data. Costs 20% less than Standard-IA.
+
+ * Lifecycle Policies for S3
+    * Objects in a bucket can transition or expire based on your criteria
+    * Transtitions can enable objects to move to another storage class based on time
+    * Expiration can delete objects based on age
+    * Your policies can also factor in versions of a specific object in the bucket 
+    
 
 #### Glacier and Glacier Deep Archive
-
-#### Elastic Block Store
+  * [Documentation](https://aws.amazon.com/s3/storage-classes/?nc=sn&loc=3)
+  * Glacier is a secure, durable, low-cost storage option for data archiving. 
+     * Has configurable retrieval times when you need to get files out of storage
+     * Can send files directly from an S3 bucket or through lifecycle rules in S3
+     * 90 day minimum storage duration change
+     * Can be retrieved in minutes or hours
+     * You pay a retrieval fee per GB
+     * Over 5 times less expensive than Standard S3. 
+     
+  * Glacier Deep Archive
+     * Low-cost storage class for long-term retention and digital preservation of data that may be accessed one or twice in a year. Best suited for customers in sectors that have long-term data storage compliance requirements (Financial services, health care, public sectors, etc...)
+     * Can also be used for disaster recovery or backups
+     * 180 day minimum storage duration change
+     * Can be retrieved in hours
+     * You pay a retrieval fee per GB
+     * Over 23 times less expensive than Standard S3
+   
+#### Elastic Block Store (EBS)
+ * [Documentation](https://aws.amazon.com/ebs)
+ * High-performance block storage designed for use with EC2
 
 #### Elastic File System
 
 #### AWS Snowball
+
 
 ### Database Services
 
