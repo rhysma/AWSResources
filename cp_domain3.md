@@ -250,6 +250,60 @@
 * Charged per state transition along with the other services you're using
 * Uses the Amazon States Language for defining Workflows
 
+
+## Management and Governance
+
+### AWS CloudTrail
+* [Documentation](https://aws.amazon.com/cloudtrail/)
+* Service that enables goverance, compliance, operation auditing, risk auditing and continuous monitoring.
+* Gives you a history of everything that happens on your account. How services and resources are accessed. Simplifies security analysis, resource charge tracking, and troubleshooting. 
+* Loging
+   * Creates S3 bucket or CloudWatch Log
+   * Logs events in the regions in which they occur
+   * Meets many compliance requirements for infrastructure auditing
+   * Best practice - should be enabled on every account
+   
+### Amazon CloudWatch
+* [Documentation](https://aws.amazon.com/cloudwatch/)
+* A monitoring and observability service - provides ddata and actionable insights to montior your applications
+* Collects monitoring and operational data in the form of logs, metrics, and events
+* Many uses - compliance requirements, forensic analysis, operational analysis, troubleshooting
+* Enable alarms
+* Custom dashboards based on collected metrics
+
+### AWS Config
+* [Documentation](https://aws.amazon.com/config/)
+* A service that enables you to assess, audit, and evaluate the configurations of your resources. 
+* Monitors and records your configuration to allow for quick changes and evaluation
+
+
+### AWS System Manager
+* [Documentation](https://aws.amazon.com/systems-manager/)
+* Gives you visibility and control of your infrastructure on AWS
+* Unified user interface so you can view operational data from multiple services and automate operational tasks
+* Give a secure way to access servers using only AWS credentials
+* Gives you a way to store commonly used parameters securely for operational use
+
+### AWS CloudFormation
+* [Documentation](https://aws.amazon.com/cloudformation/)
+* A common language for you to model and provision AWS and third-party application resources in your cloud environment
+* Allows you to provision infrastructure based on templates
+* Templates can be YAML or JSON
+
+
+### AWS Organiations and Control Tower
+* [Organizations Documentation](https://aws.amazon.com/organizations/)
+* Helps you centrally govern your environment as you grow and scale your workloads
+* Gives you centralized billing, control access, compliance, and security
+* Sharing resources across your AWS accounts
+
+* [Control Tower Documentation](https://aws.amazon.com/controltower/)
+* Provides setup and governance support for large accounts/orgs and teams
+* Automate the setup of your AWS environment
+* Provides recommended rules - called guardrails that help enforce policy
+* Includes a dashboard to gain operational insights from a single view
+
+
 ## Scenario Review Questions
 ### Computing Scenarios
  1. Business A - is in the process of moving multiple workloads to AWS one of those is an application that will be leveraged for at least five more years. This is a core business application that the company will be leveraging for the foreseeable future. However, they're looking to be as cost efficient as possible for this and they want ease of use. 
@@ -319,6 +373,19 @@
    * Answer - Simple Notification Service (SNS)
  
  
+ ### Management and Governance Scenarios
+  1. Business A - They are a financial services company that recently discovered that someone had disabled a security setting on a server. They are concerned that events like this might go unnoticed until a breach. 
+     * Which service would allow the organization to continually track configuration and infrastructure?
+     * Answer - AWS Config
+     
+ 1. Business B - They are a learning SaaS company that will be launching a new application that includes several components. They are looking at ways to minimize manual work required when creating infrastructure. 
+    * What service would enable them to automate their effort?
+    * AWS CloudFormation
+ 
+ 1. Business C - They are a manufacturing company and they have a cloud server which is needed to support their business processes and it was deleted. They want to make sure they know who was responsible.
+    * Which service could show the individual who deleted this specific server?
+    * AWS CloudTrail 
+    
  
  
  
