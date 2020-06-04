@@ -236,9 +236,19 @@
 
 #### AWS Messaging 
 * Publish and subscribe to messaging for high throughput and reliable message delivery
-
-
-#### AWS Step Functions
+* Amazon Simple Notification Service (SNS) and Simple Queue Service (SQS)
+  * Message queue that sends, stores, and receives messages between applications
+* Amazon MQ
+  * Message broker - makes migration easy and enables hybrid architectures
+  
+### AWS Step Functions
+* [Documentation](https://aws.amazon.com/step-functions/)
+* Allows you to coordinate multiple AWS services into a serverless workflow
+* Makes it simpler and more intuitive to stitch together different Amazon services 
+* Support serverless architectures
+* Supports complex workflows and error handling
+* Charged per state transition along with the other services you're using
+* Uses the Amazon States Language for defining Workflows
 
 ## Scenario Review Questions
 ### Computing Scenarios
@@ -280,6 +290,33 @@
    * What approach would you recommend? 
    * Answer - Elastic File System 
  
+ ### Database Service Scenarios
+ 
+ 1. Business A - A financial services company who is transtioning their data warehouse to AWS for analysis. This data warehouse would need to support up to 2PB of data. 
+    * What service would you recommend?
+    * Answer - Amazon Redshift
+    
+ 1. Business B - They are a tech company that needs to launch a MySQL database for a new web application. They need to have direct access to the virtual server that MySQ is running on.
+    * What approach would you recommend?
+    * Answer - EC2 server with MySQL installed
+    
+ 1. Business C - They are a gaming company that is trying to determine how to store realtime user analytics. They need low latency and the ability to scale up to 1 million players. The company want to minimize the amount of time it takes to maintain the database. 
+    * What approach would you recommend?
+    * Answer - DynamoDB
+ 
+ ### App Integration Services Scenarios
+ 1. Business A - A non-profile that assigns volunteers to opportunities. Recently their database server went down and users were unable to sign up. While the situation is now corrected, there is still some downtown expected in the future. The business wants to explore an AWS service that would prevent lost user signups
+    * What service would you recommend?
+    * Answer - Simple Queue Service (SQS)
+    
+    
+ 1. Business B - They are creating a list of onboarding steps for new customers for their app. These steps detail integrations with their CRM, emails to the user, and analytics. The business is worried about the time it will take to build all of this from scratch. 
+   * Is there an AWS service that can help?
+   * Answer - AWS Step Functions
+   
+1. Business C - They are an eCommerce company building a custom platform. They are adding new functionality and want to have aspects of the platform that listen for events like orders and refunds. They don't know yet all of the elements that would need to respond to events.
+   * Is there a service that would allow current and future parts of the platform to listen for these events?
+   * Answer - Simple Notification Service (SNS)
  
  
  
