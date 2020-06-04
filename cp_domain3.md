@@ -243,12 +243,12 @@
   
 ### AWS Step Functions
 * [Documentation](https://aws.amazon.com/step-functions/)
-* Allows you to coordinate multiple AWS services into a serverless workflow
-* Makes it simpler and more intuitive to stitch together different Amazon services 
-* Support serverless architectures
-* Supports complex workflows and error handling
-* Charged per state transition along with the other services you're using
-* Uses the Amazon States Language for defining Workflows
+   * Allows you to coordinate multiple AWS services into a serverless workflow
+   * Makes it simpler and more intuitive to stitch together different Amazon services 
+   * Support serverless architectures
+   * Supports complex workflows and error handling
+   * Charged per state transition along with the other services you're using
+   * Uses the Amazon States Language for defining Workflows
 
 
 ## Management and Governance
@@ -265,43 +265,43 @@
    
 ### Amazon CloudWatch
 * [Documentation](https://aws.amazon.com/cloudwatch/)
-* A monitoring and observability service - provides ddata and actionable insights to montior your applications
-* Collects monitoring and operational data in the form of logs, metrics, and events
-* Many uses - compliance requirements, forensic analysis, operational analysis, troubleshooting
-* Enable alarms
-* Custom dashboards based on collected metrics
+   * A monitoring and observability service - provides ddata and actionable insights to montior your applications
+   * Collects monitoring and operational data in the form of logs, metrics, and events
+   * Many uses - compliance requirements, forensic analysis, operational analysis, troubleshooting
+   * Enable alarms
+   * Custom dashboards based on collected metrics
 
 ### AWS Config
 * [Documentation](https://aws.amazon.com/config/)
-* A service that enables you to assess, audit, and evaluate the configurations of your resources. 
-* Monitors and records your configuration to allow for quick changes and evaluation
+   * A service that enables you to assess, audit, and evaluate the configurations of your resources. 
+   * Monitors and records your configuration to allow for quick changes and evaluation
 
 
 ### AWS System Manager
 * [Documentation](https://aws.amazon.com/systems-manager/)
-* Gives you visibility and control of your infrastructure on AWS
-* Unified user interface so you can view operational data from multiple services and automate operational tasks
-* Give a secure way to access servers using only AWS credentials
-* Gives you a way to store commonly used parameters securely for operational use
+   * Gives you visibility and control of your infrastructure on AWS
+   * Unified user interface so you can view operational data from multiple services and automate operational tasks
+   * Give a secure way to access servers using only AWS credentials
+   * Gives you a way to store commonly used parameters securely for operational use
 
 ### AWS CloudFormation
 * [Documentation](https://aws.amazon.com/cloudformation/)
-* A common language for you to model and provision AWS and third-party application resources in your cloud environment
-* Allows you to provision infrastructure based on templates
-* Templates can be YAML or JSON
+   * A common language for you to model and provision AWS and third-party application resources in your cloud environment
+   * Allows you to provision infrastructure based on templates
+   * Templates can be YAML or JSON
 
 
 ### AWS Organiations and Control Tower
 * [Organizations Documentation](https://aws.amazon.com/organizations/)
-* Helps you centrally govern your environment as you grow and scale your workloads
-* Gives you centralized billing, control access, compliance, and security
-* Sharing resources across your AWS accounts
+   * Helps you centrally govern your environment as you grow and scale your workloads
+   * Gives you centralized billing, control access, compliance, and security
+   * Sharing resources across your AWS accounts
 
 * [Control Tower Documentation](https://aws.amazon.com/controltower/)
-* Provides setup and governance support for large accounts/orgs and teams
-* Automate the setup of your AWS environment
-* Provides recommended rules - called guardrails that help enforce policy
-* Includes a dashboard to gain operational insights from a single view
+   * Provides setup and governance support for large accounts/orgs and teams
+   * Automate the setup of your AWS environment
+   * Provides recommended rules - called guardrails that help enforce policy
+   * Includes a dashboard to gain operational insights from a single view
 
 
 ## Scenario Review Questions
