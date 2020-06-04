@@ -175,7 +175,7 @@
     
 
 #### AWS Snowball and Snowmobile 
- * [Documentation] (https://aws.amazon.com/snowball/?nc2=type_a)
+ * [Documentation](https://aws.amazon.com/snowball/?nc2=type_a)
   * Snowball - A service to physically migrate petabyte scacle data to AWS
      * Block storage and S3 compatible 
      * 40 Virtual CPUs 
@@ -190,15 +190,53 @@
 
 ### Database Services
 
-#### Relational Database Service
-
+#### Relational Database Service (RDS)
+ * [Documentation](https://aws.amazon.com/rds/)
+ * Easy to set up and operate databases in the cloud. Doesn't require you to have a server, understand the underlying infrastructure.
+ * Fully managed service - handles provisioning, patching, backups, recovery
+ * Supports operations across multiple availability zones, allows for quick scaling. 
+ * Two types of storage - General purpose SSDs and provisioned iOPS drives
+ * Access to a lot of different database platforms - Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle, Microsoft SQL
+ 
+##### Amazon Aurora
+* [Documentation](https://aws.amazon.com/rds/aurora/)
+* Amazon's database engine available through RDS - built for the cloud
+* MySQL and PostgreSQL compatible
+* Performance and availability of commercial-grade databases at 1/10th the cost
+   * 5 times faster than standard MySQL
+   * 3 times faster than standard PostgreSQL
+   
 #### DynamoDB
+* [Documementation](https://aws.amazon.com/dynamodb/)
+* Fully managed like RDS but is a noSQL service
+   * Multiregion
+   * Multimaster
+   * Durable
+   * Built in security, backups, restore, in-memory caching
+* Provides key/values and document database
+* Delivers single-digit millisecond performance at any scale
 
 #### Elasticache and Redshift 
+* [Elasticache Documentation](https://aws.amazon.com/elasticache/)
+* Fully managed, in-memory, data store. 
+* Two different engines - Redis and Memcache
+
+* [Redshift Documentation](https://aws.amazon.com/redshift/)
+* Scalable data warehouse service
+* Leverages high-performance disks, petabytes in scale
+* Allows you to fully encrypt the contents of your data warehouse and gives you a level of isolation within your VPC
+* Query petabyes of structured and semi-structured data across your data warehouse, using standard SQL
 
 ### App Integration Services
+* [Documentation](https://aws.amazon.com/products/application-integration/)
+* Suite of services that enable communications between decoupled components within microservices, distributed systems, and serverless applications.
+  * No longer have to write custom code to enable interoperability between applications
+  * Limits extra code that may be repeated in your microservices
+  * Automatic scaling
 
 #### AWS Messaging 
+* Publish and subscribe to messaging for high throughput and reliable message delivery
+
 
 #### AWS Step Functions
 
