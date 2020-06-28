@@ -2,7 +2,7 @@
 
 * Domain 2: Security and Compliance
   * [2.1 Define the AWS shared responsibility model](https://github.com/rhysma/AWSResources/blob/master/cp_domain2.md#global-infrastructure---regions-and-availability-zones)
-  * 2.2 Define AWS Cloud security and compliance concepts
+  * [2.2 Define AWS Cloud security and compliance concepts]
   * 2.3 Identify AWS access management capabilities
   * 2.4 Identify resources for security support
   * [Domain 2 Study Questions and Review ](https://github.com/rhysma/AWSResources/blob/master/cp_domain2.md#domain-2-cloud-computing-scenarios)
@@ -52,6 +52,9 @@
 
 #### AWS Cloud Security and Compliance 
 
+* [AWS Acceptable Use Policy](https://aws.amazon.com/aup/)
+* [AWS Shared Responsibiliy Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
+
 ##### Shared Responsibility Model of Security
 * Security and compliance is a shared responsibility between AWS and the customer. We have to have a good level of understanding of what is the responsibility of AWS and what is our responsibility to the customer. 
 
@@ -71,6 +74,28 @@
    * Data security and encryption - make sure we're following best practices for in-transit data and data at rest
    * The proper configuration of operating systems, networks, and firewall configuration
    * Software applications and code that is installed onto servers or onto services in the cloud
+   
+#### AWS Well-Architected Framework
+* A collection of best practices created over time for AWS cloud architecture 
+* [Link](https://aws.amazon.com/architecture/well-architected/)
+* Focuses on the five key pillars that help you know how to best create systems that drive business value.
+   * Framework, operational excellence, security, reliability, performance efficiency, and cost optimization
+   
+   
+#### High Availability and Fault Tolerance
+* Fault tolerance - we're going to be able to support the failure of components within your architecture
+* High availability - keep your entire solution up and running in its expected manner despite any issues that may occur
+
+
+#### Compliance
+* Following the rules and standards set out in an agreement about how you will access, use, transfer, or store information
+* There are many difference compliance standards you may have to review and follow depending on your business or industry
+   * There are tools on AWS to help you know how to navigate these compliance standards
+
+* [AWS Config](https://aws.amazon.com/config/#:~:text=AWS%20Config%20is%20a%20service,recorded%20configurations%20against%20desired%20configurations.) - Contains some conformance packs that are available to help you with compliance 
+* [AWS Artifact](https://aws.amazon.com/artifact/) - Provides self-service access to AWS compliance reports 
+* [AWS GuardDuty](https://aws.amazon.com/guardduty/) - Provides intelligent threat detection to help monitor and detect if there are scenarios that are happening which are unusual 
+
    
 #### Domain 2 Cloud Computing Scenarios
 
@@ -94,6 +119,21 @@
   
 1. What is the primary purpose of an AWS Edge Location?
    1. Serve content where it is closet to the end users
+   
+1. Which of the Pillars of the Well-architected Framework involves the running and monitoring of systems for business value?
+   1. Operational Excellence
+
+1. Which of the Pillars of the Well-architected Framework involves protecting information and business assets
+   1. Security
+   
+1. Which of the Pillars of the Well-architected Framework involves enabling infrastructure to recover from disruptions?
+   1. Reliability
+   
+1. Which of the Pillars of the Well-architected Framework involves using resources efficiently to achieve business value?
+   1. Performance Efficiency
+
+1. Which of the Pillars of the Well-architected Framework involves achieving minimal costs for the desired value?
+   1. Cost optimization
 
 * Scenario 1
    * Company A is looking to transition to AWS. They are going to start with a few workloads and then move other workloads to the platform later. Right now, it's a requirement that they store their backup data in multiple geographic areas. 
@@ -124,4 +164,29 @@
   * Company C has a web developer who was given some recent downtime to review moving their site to the cloud because currently they're using their own data center.  Finance is asking for estimate of costs for this transition to AWS. They want to understand how much it would cost per month to run this in the cloud.
   * What approach should be taken to this data to the finance team? 
      * Use the Pricing Calculator to create a report that shows all resources and their AWS costs
+        
+* Scenario 7
+   * Company A is building an application to process credit cards. They will be processing cards directly and not through a service. Their bank needs a PCI DSS compliance report from AWS.  
+   * Where would they go to get this information?
+      * AWS Artifact 
+
+* Scenario 8
+   * Company B is considering a transition to the cloud and they store personal information securely in their system. The CTO has asked what is the company's responsibility for security of this data? 
+   * What would you tell the CTO?
+      * You would want to review any compliance rules for your industry/business reguarding personal information storage.  You would review the AWS Shared Responsibility Model.
+      
+* Scenario 9
+   * Company C building a new tool for digital asset management and they are curious how to best leverage the capabilities of AWS in their application.  
+   * What resources would you recommend to them?
+      * Review the AWS Well Architected Framework
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
      
