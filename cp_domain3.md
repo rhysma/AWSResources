@@ -2,7 +2,7 @@
 
 * Domain 3: Technology
   * [3.1 Define methods of deploying and operating in the AWS Cloud](https://github.com/rhysma/AWSResources/blob/master/cp_domain3.md#methods-of-connecting-to-aws)
-  * 3.2 Define the AWS global infrastructure
+  * [3.2 Define the AWS global infrastructure](https://github.com/rhysma/AWSResources/blob/master/cp_domain2.md#global-infrastructure---regions-and-availability-zones)
   * [3.3 Identify the core AWS services](https://github.com/rhysma/AWSResources/blob/master/cp_domain3.md#core-services)
   * 3.4 Identify resources for technology support
   * [Review Questions](https://github.com/rhysma/AWSResources/blob/master/cp_domain3.md#scenario-review-questions)
