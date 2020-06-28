@@ -50,7 +50,28 @@
 * AWS Pricing Calculator
    * Allows you to project costs for specific services or workloads in the cloud. 
 
+#### AWS Cloud Security and Compliance 
 
+##### Shared Responsibility Model of Security
+* Security and compliance is a shared responsibility between AWS and the customer. We have to have a good level of understanding of what is the responsibility of AWS and what is our responsibility to the customer. 
+
+* AWS has the responsibility for the security of the cloud 
+   * Core systems that are running the entire platform
+   * Access control and training for their employees
+   * The underlying network in the data center
+   * Making sure all data centers and availability zones maintain connectivity
+   * Responsible for the hardware that allows for global infrastructure - switches, servers
+   * Configuration management - determining how bits of data get from one location to another
+   * Patching of the cloud infrastructure and services
+   
+* The customer is responsible for the security in the cloud
+   * Control over the things they are putting onto the platform and how they're using it
+   * Individual access to cloud resources and training
+   * Making sure that we have set the right level of permission to the people in our organization that need access to services
+   * Data security and encryption - make sure we're following best practices for in-transit data and data at rest
+   * The proper configuration of operating systems, networks, and firewall configuration
+   * Software applications and code that is installed onto servers or onto services in the cloud
+   
 #### Domain 2 Cloud Computing Scenarios
 
 1. Three primary elements of AWS Global Infrastructure are:
