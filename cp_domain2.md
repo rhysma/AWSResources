@@ -42,7 +42,7 @@
 
 * AWS Cost Explorer
   * Allows you to view and explore your AWS costs, provides breakdowns by service, shows current usage costs and makes monthly projections, gives recommendations for cost optimization. 
-  * Resource Tags - Metadata that we can attach to our specific AWS resources, if you have multiple departments or purposes for useage in an organization, tags allows you to keep those organized. Tags contain a name and an optional value. Once tags have been created, you can use tags within Cost Explorer to get specific usage based on those groupings. 
+  * Resource Tags - Metadata that we can attach to our specific AWS resources, if you have multiple departments or purposes for usage in an organization, tags allows you to keep those organized. Tags contain a name and an optional value. Once tags have been created, you can use tags within Cost Explorer to get specific usage based on those groupings. 
 * AWS Budgets 
    * Budgets allows you to use the data and visualizations from Cost Explorer to plan and track your usage across all Services. Set budgets for the the amount you want to spend on a particular service, or for all services. 
 * TCO Calculator
