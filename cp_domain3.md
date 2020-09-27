@@ -292,7 +292,7 @@
    * Templates can be YAML or JSON
 
 
-### AWS Organiations and Control Tower
+### AWS Organizations and Control Tower
 * [Organizations Documentation](https://aws.amazon.com/organizations/)
    * Helps you centrally govern your environment as you grow and scale your workloads
    * Gives you centralized billing, control access, compliance, and security
@@ -332,7 +332,7 @@
     * Which scaling approach would you recommend and what services should they use?
     * Answer - Elastic Load Balancing, Horizontal Scaling method
    
- ### File Stoage Services Scenarios
+ ### File Storage Services Scenarios
  1. Business A - Launched a site that offers daily tutorials for developers. They use S3 to store the assets needed per tutorial. These assets are very popular within the week the tutorial is launched. After this initial week, these assets are rarely accessed.
     * How can Business A reduce their S3 costs while maintaining durability?
     * Answer - Setup S3 lifecycle rule that moves from Standard to Standard-IA storage
