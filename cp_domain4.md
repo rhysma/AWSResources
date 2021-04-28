@@ -42,3 +42,14 @@ To help new AWS customers get started in the cloud, AWS offers a free usage tier
    * Storage costs for the hardware, administration, and facilities. 
    * Network costs for hardware, administration, and facilities. •And IT labor costs that are required to administer the entire solution.
 
+## AWS pricing Calculator
+
+* Use the AWS Pricing Calculator to:
+   * Estimate monthly costs
+   * Identify opportunities to reduce monthly costs
+   * Model your solutions before building them
+   * Explore price points and calculations behind your estimate
+   * Find the available instance types and contract terms that meet your needs
+   * Name your estimate and create and name groups of services
+
+[AWS Pricing Calculator website](https://calculator.aws/#/)
