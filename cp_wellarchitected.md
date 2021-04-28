@@ -82,16 +82,29 @@ To achieve reliability, a system must have both a well-planned foundation and mo
 [Reliability Pillar Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
 
 ## Performance Efficiency
-* Focus: 
+* Focus: Use IT and computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
 
    * Key topics:
-      * 
-
+      * Selecting the right resource types and sizes based on workload requirements
+      * Monitoring performance
+      * Making informed decisions to maintain efficiency as business needs evolve
 
    * Design principles:
-
+      * Democratize advanced technologies–Consume technologies as a service. For example, technologies such as NoSQL databases, media transcoding, and machine learning require expertise that is not evenly dispersed across the technical community. In the cloud, these technologies become services that teams can consume. Consuming technologies enables teams to focus on product development instead of resource provisioning and management.
+      * Go global in minutes–Deploy systems in multiple AWS Regions to provide lower latency and a better customer experience at minimal cost.
+      * Use serverless architectures–Serverless architectures remove the operational burden of running and maintaining servers to carry out traditional compute activities. Serverless architectures can also lower transactional costs because managed services operate at cloud scale.
+      * Experiment more often–Perform comparative testing of different types of instances, storage, or configurations.
+      * Consider mechanical sympathy–Use the technology approach that aligns best to what you are trying to achieve. For example, consider your data access patterns when you select approaches for databases or storage.
 
    * Best practice areas:
+      * Selection
+      * Review
+      * Monitoring
+      * Tradeoffs 
+
+Use data to design and build a high-performance architecture. Gather data on all aspects of the architecture, from the high-level design to the selection and configuration of resource types. Review your choices periodically to ensure that you are taking advantage of new AWS services. Perform monitoring so that you are aware of any deviance from expected performance and can take prompt action to remediatethem. Finally, use tradeoffs in your architecture to improve performance, such as using compression, using caching, or relaxing consistency requirements.
+
+[Performance Efficiency Pillar Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)
 
 ## Cost Optimization
    * Focus: 
