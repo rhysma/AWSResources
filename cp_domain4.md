@@ -28,3 +28,17 @@
    * Custom pricing - AWS realizes that every customer has different needs. If none of the AWS pricing models work for your project, custom pricing is available for high-volume projects with unique requirements.
 
 [AWS Pricing Overview doc](https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf)
+
+### AWS Free Tier
+To help new AWS customers get started in the cloud, AWS offers a free usage tier (the AWSFree Tier)for new customers for up to 1 year.The AWS Free Tier applies to certain services and options. If youare a new AWS customer, you can run a free Amazon Elastic Compute Cloud (Amazon EC2) T2 micro instance for a year, while also using a free usage tier for Amazon S3, Amazon Elastic Block Store (Amazon EBS), Elastic Load Balancing, AWS data transfer, and other AWS services.
+
+[AWS Free Tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
+
+## Total Cost of Ownership
+* Total Cost of Ownership (TCO) is the financial estimate to help identity direct and indirect costs of a system
+* You can identify the best option by comparing the on-premises solution to a cloud solution. Total Cost of Ownership (or TCO) is a financial estimate that is intended to help buyers and owners determine the direct and indirect costs of a product or system. TCO includes the cost of a service, plus all the costs that are associated with owning the service. 
+* Some of the costs that are associated with data center management include: 
+   * Server costs for both hardware and software, and facilities costs to house the equipment. 
+   * Storage costs for the hardware, administration, and facilities. 
+   * Network costs for hardware, administration, and facilities. •And IT labor costs that are required to administer the entire solution.
+
