@@ -25,10 +25,69 @@ Operations teams must understand business and customer needs so they can effecti
 
 [Operational Excellent Pillar Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Operational-Excellence-Pillar.pdf)
 
-* Security
+## Security
 
-* Reliability
+   * Focus: Protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies
 
-* Performance Efficiency
+   * Key topics:
+      * Protecting confidentiality and integrity of data
+      * Identifying and managing who can do what
+      * Protecting systems
+      * Establishing controls to detect security events
 
-* Cost Optimization
+   * Design principles:
+      * Implement a strong identity foundation–Implement the principle of least privilege and enforce separation of duties with appropriate authorization for each interaction with your AWS resources. Centralize privilege management and reduce or even eliminate reliance on long-term credentials.
+      * Enable traceability–Monitor, alert, and audit actions and changes to your environment in real time. Integrate logs and metrics with systems to automatically respond and take action.
+      * Apply security at all layers–Apply defenseindepth and apply security controls to all layers of your architecture (forexample,edge network, virtual private cloud, subnet, and load balancer; and every instance, operating system, and application).
+      * Automate security best practices–Automate security mechanisms to improve your ability to securely scale more rapidly and cost effectively. Create secure architectures and implement controls that are defined and managed as code in version-controlled templates.
+      * Protect data in transit and at rest–Classify your data into sensitivity levels and use mechanisms such as encryption, tokenization, and access control where appropriate.
+      * Keep people away from data–To reduce the risk of loss or modification of sensitive data due to human error, create mechanisms and tools to reduce or eliminate the need for direct access or manual processing of data.
+      * Prepare for security events–Have an incident management process that aligns with organizational requirements. Run incident response simulations and use tools with automation to increase your speed of detection, investigation, and recovery.
+
+   * Best practice areas:
+      * Security
+      * Identity and access management
+      * Detection
+      * Infrastructure protection
+      * Data protection
+      * Incident response 
+
+Before you architect any system, you must put security practices in place. You must be able to control who can do what. In addition, you must be able to identify security incidents, protect your systems and services, and maintain the confidentiality and integrity of data through data protection. You should have a well-defined and practiced process for responding to security incidents. These tools and techniques are important because they support objectives such as preventing financial loss or complying with regulatory obligations.
+
+[Security Pillar Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf)
+
+## Reliability
+   * Focus: 
+
+   * Key topics:
+      * 
+
+
+   * Design principles:
+
+
+   * Best practice areas:
+
+## Performance Efficiency
+* Focus: 
+
+   * Key topics:
+      * 
+
+
+   * Design principles:
+
+
+   * Best practice areas:
+
+## Cost Optimization
+   * Focus: 
+
+   * Key topics:
+      * 
+
+
+   * Design principles:
+
+
+   * Best practice areas:
