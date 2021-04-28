@@ -107,13 +107,28 @@ Use data to design and build a high-performance architecture. Gather data on all
 [Performance Efficiency Pillar Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)
 
 ## Cost Optimization
-   * Focus: 
+   * Focus: Avoid unnecessary costs
 
    * Key topics:
-      * 
-
+      * Understanding and controlling where money is being spent
+      * Selecting the most appropriate and right number of resource types
+      * Analyzing spend over time
+      * Scaling to meeting business needs without overspending
 
    * Design principles:
-
+      * Implement Cloud Financial Management–To achieve financial success and accelerate business value realization in the cloud, you need to invest in cloud financial management and cost optimization. You need to build capability through knowledge building, programs, resources, and processes to become a cost-efficient organization.
+      * Adopt a consumption model–Pay only for the computing resources that you require. Increase or decrease usage depending on business requirements, not by using elaborate forecasting.
+      * Measure overall efficiency–Measure the business output of the workload and the costs that are associated with delivering it. Use this measure to know the gains that you make from increasing output and reducing costs.
+      * Stop spending money on undifferentiated heavy lifting –AWS does the heavy lifting of racking, stacking, and powering servers, which meansthat you can focus on your customers and business projects instead of the IT infrastructure.
+      * Analyze and attribute expenditure–The cloud makes it easier to accurately identify system usage and costs, and attribute IT costs to individual workload owners. Having this capability helps you measure return on investment (ROI) and gives workload owners an opportunity to optimize their resources and reduce costs.
 
    * Best practice areas:
+      * Practice cloud financial management
+      * Expenditure and usage awareness
+      * Cost-effective resources
+      * Manage demand and supply resources
+      * Optimize over time 
+
+Similar to the other pillars, there are tradeoffs to consider when evaluating cost. For example, you may choose to prioritize for speed—going to market quickly, shipping new features, or simply meeting a deadline—instead of investing in upfront cost optimization. As another example, designing an application for a higher level of availability typically costs more. You should identify your true application needs and use empirical data to inform your architectural design decisions. Perform benchmarking to establish the most cost-optimal workload over time.
+
+[Cost Optimization Pillar Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf)
