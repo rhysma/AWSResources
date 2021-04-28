@@ -57,16 +57,29 @@ Before you architect any system, you must put security practices in place. You m
 [Security Pillar Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf)
 
 ## Reliability
-   * Focus: 
+   * Focus: Ensure a workload performs its intended function correctly and consistently when it's expected to.
 
    * Key topics:
-      * 
-
+      * Designing distributed systems
+      * Recovering planning
+      * Handling change
 
    * Design principles:
-
+      * Automatically recover from failure - Monitor systems for key performance indicators and configure your systems to trigger an automated recovery when a threshold is breached. This practice enables automatic notification and failure-tracking, and for automated recovery processes that work around or repair the failure.
+      * Test recovery procedures - Test how your systems fail and validate your recovery procedures. Use automation to simulate different failures or to recreate scenarios that led to failures before. This practice can expose failure pathways that you can test and rectify before a real failure scenario.
+      * Scale horizontally to increase aggregate workload availability - Replace one large resource with multiple, smaller resources and distribute requests across these smaller resources to reduce the impact of a single point of failure on the overall system.
+      * Stop guessing capacity - Monitor demand and system usage, and automate the addition or removal of resources to maintain the optimal level for satisfying demand.
+      * Manage change in automation - Use automation to make changes to infrastructure and manage changes in automation.
 
    * Best practice areas:
+      * Foundations
+      * Workload architecture
+      * Change management
+      * Failure management 
+
+To achieve reliability, a system must have both a well-planned foundation and monitoring in place. It must have mechanisms for handling changes in demand or requirements. The system should be designed to detect failure and automatically heal itself.
+
+[Reliability Pillar Whitepaper](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
 
 ## Performance Efficiency
 * Focus: 
