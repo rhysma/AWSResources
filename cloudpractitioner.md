@@ -15,6 +15,7 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
 * [Domain 2: Security and Compliance](https://github.com/rhysma/AWSResources/blob/master/cp_domain2.md)
 * [Domain 3: Technology](https://github.com/rhysma/AWSResources/blob/master/cp_domain3.md)
 * [Domain 4: Billing and Pricing](https://github.com/rhysma/AWSResources/blob/master/cp_domain4.md)
+* [Well-Architected Framework](https://github.com/rhysma/AWSResources/blob/master/cp_wellarchitected.md)
 
 
 
