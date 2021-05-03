@@ -13,7 +13,7 @@
      * Make frequent, small, reversible changes - Design workloads to enable components to be updated regularly. Make changes in small increments that can be reversed if they fail (without affecting customers when possible).
      * Refine operations procedures frequently - Look for opportunities to improve operations procedures. Evolve your procedures appropriately as your workloads evolve. Set up regular game days to review all procedures, validate their effectiveness, and ensure that teams are familiar with them.
      * Anticipate failure - Identify potential sources of failure so that they can be removed or mitigated. Test failure scenarios and validate your understanding of their impact. Test your response procedures to ensure that they are effective and that teams know how to run them. Set up regular game days to test workloads and team responses to simulated events.
-     * Learn from all operational events and failures - Drive improvement through lessons learned from all operational events and failures. Share what is learned across teams and through the entire organization.AWS Academy Cloud FoundationsModule 9: Cloud Architecture© 2021 Amazon Web Services, Inc. or its affiliates. All rights reserved.22
+     * Learn from all operational events and failures - Drive improvement through lessons learned from all operational events and failures. Share what is learned across teams and through the entire organization
 
   * Best practice areas:
      * Organization
