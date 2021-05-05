@@ -1,4 +1,4 @@
-# AWS Exam Study Resources
+# AWS Cloud Practitioner Exam Study Resources
 Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
 
 ## Links and Resources
