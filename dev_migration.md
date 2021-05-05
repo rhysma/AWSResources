@@ -34,3 +34,25 @@ There are two deployment strategies for cloud applications
    * This kind of deployment enables an organization to extend and grow its infrastructure into the cloud by connecting cloud and internal systems
    * [The hybrid cloud](https://aws.amazon.com/hybrid/)
 
+### Cloud Computing Deployment Models
+There are three types of cloud computing deployment models depending on the level of abstraction you want
+* Virtual Machines - "I want to configure the servers, storage, networking, and OS for my applications" (EC2)
+* Containers - "I want to run my application and its dependencies in resource-isolated processes" (Elastic Container)
+* Serverless - "I don't want to manager servers, I just want to upload my code and have it run as needed" (Lambda)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
