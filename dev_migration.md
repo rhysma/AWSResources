@@ -32,4 +32,5 @@ There are two deployment strategies for cloud applications
 
 * Hybrid - The deployment can connect between infrastructure and applications in the cloud and in on-prem datacenters. 
    * This kind of deployment enables an organization to extend and grow its infrastructure into the cloud by connecting cloud and internal systems
+   * [The hybrid cloud](https://aws.amazon.com/hybrid/)
 
