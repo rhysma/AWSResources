@@ -1,4 +1,4 @@
-# Cloud Migration Strategies
+## Cloud Migration Strategies
 There are six common strategies that an organization can use to migrate its applications to the cloud
  * Rehosting
     * Also called Lift-and-Shift
@@ -22,3 +22,14 @@ There are six common strategies that an organization can use to migrate its appl
 
 
 [More Info](https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/)
+
+## Cloud Deployment Strategies
+There are two deployment strategies for cloud applications
+
+* All-In Cloud - When your cloud application is fully deployed in the cloud, and all parts run in the cloud
+   * Cloud-based applications are either created in the cloud (cloud native)
+   * Or they have been fully migrated to take advantage of the benefits of cloud computing 
+
+* Hybrid - The deployment can connect between infrastructure and applications in the cloud and in on-prem datacenters. 
+   * This kind of deployment enables an organization to extend and grow its infrastructure into the cloud by connecting cloud and internal systems
+
