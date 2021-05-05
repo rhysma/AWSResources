@@ -1,21 +1,35 @@
-# AWS Cloud Practitioner Exam Study Resources
-Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
+# Introduction to AWS Cloud
 
-## Links and Resources
-* [Main Amazon Page - Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)
-* [Free Code Camp](https://www.freecodecamp.org/news/awscertified-challenge-free-path-aws-cloud-certifications/)
-   * [Free Code Camp Video Course](https://www.youtube.com/watch?v=3hLmDS179YE)
-* [PluralSight](https://app.pluralsight.com/paths/certificate/aws-certified-cloud-practitioner)
-* [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
-* [Global Infrastructure Visualization](https://www.infrastructure.aws/)
-* [AWS Pricing Calculator](https://calculator.aws/#/)
+## What is Cloud Computing?
+* the on-demand delivery of IT resources and applications through the Internet, with pay-as-you-go pricing. 
+* Stop thinking of your infrastructure as hardware, and instead, think of and use it as software
 
-## Whats on the Exam?
-* [Domain 1: Cloud Concepts](https://github.com/rhysma/AWSResources/blob/master/cp_domain1.md)
-* [Domain 2: Security and Compliance](https://github.com/rhysma/AWSResources/blob/master/cp_domain2.md)
-* [Domain 3: Technology](https://github.com/rhysma/AWSResources/blob/master/cp_domain3.md)
-* [Domain 4: Billing and Pricing](https://github.com/rhysma/AWSResources/blob/master/cp_domain4.md)
-* [Well-Architected Framework](https://github.com/rhysma/AWSResources/blob/master/cp_wellarchitected.md)
+### Benefits
+* You don't have to worry about anticipating your hardware needs ahead of time
+* No more ordering, installing, and setting up your data center
+* Provision and terminate resources as necessary on AWS
+* Don't have to pay for hardware that you don't need when your needs change
+
+[What is Cloud Computing?](https://aws.amazon.com/what-is-cloud-computing/)
+
+## Three Models of Cloud Computing
+
+IaaS ----------- PaaS ----------- SaaS
+More control      vs           less control
+
+### Infrastructure as a Service (IaaS)
+* The most control over configuration
+* Control over servers, storage, networking, OS
+* The most basic form of cloud IT
+
+### Platform as a Service (PaaS)
+* Enables you to run applications without managing underlying infrastructure
+* Don't have to worry about hardware/OS
+
+### Software as a Service (SaaS)
+* Provides you with a completed product 
+* It's run and managed by the service provider
+
 
 
 
