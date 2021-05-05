@@ -10,6 +10,7 @@ Notes and resources for studying for the AWS Certified Developer Exam
 
 ## Sections
 [Intro to Cloud for Devs](https://github.com/rhysma/AWSResources/blob/master/dev_intro.md)
+
 [Cloud Mitigation Strategies](https://github.com/rhysma/AWSResources/blob/master/dev_mitigation.md)
 
 
