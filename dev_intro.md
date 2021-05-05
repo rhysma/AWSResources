@@ -14,8 +14,8 @@
 
 ## Three Models of Cloud Computing
 
-IaaS ----------- PaaS ----------- SaaS
-More control      vs           less control
+> IaaS ----------- PaaS ----------- SaaS
+> More control      vs           less control
 
 ### Infrastructure as a Service (IaaS)
 * The most control over configuration
