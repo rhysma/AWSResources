@@ -11,7 +11,7 @@ Notes and resources for studying for the AWS Certified Developer Exam
 ## Sections
 * [Intro to Cloud for Devs](https://github.com/rhysma/AWSResources/blob/master/dev_intro.md)
 * [Cloud Migration and Deployment Strategies](https://github.com/rhysma/AWSResources/blob/master/dev_migration.md)
-
+* [From Monoliths to Microservices](https://github.com/rhysma/AWSResources/edit/master/dev_tech.md)
 
 
 
