@@ -11,11 +11,11 @@ Notes and resources for studying for the AWS Certified Cloud Practitioner Exam
 * [AWS Pricing Calculator](https://calculator.aws/#/)
 
 ## Whats on the Exam?
-* [Domain 1: Cloud Concepts](/cp_domain1.md)
-* [Domain 2: Security and Compliance](/cp_domain2.md)
-* [Domain 3: Technology](/cp_domain3.md)
-* [Domain 4: Billing and Pricing](/cp_domain4.md)
-* [Well-Architected Framework](/cp_wellarchitected.md)
+* [Domain 1: Cloud Concepts](cp_domain1.md)
+* [Domain 2: Security and Compliance](cp_domain2.md)
+* [Domain 3: Technology](cp_domain3.md)
+* [Domain 4: Billing and Pricing](cp_domain4.md)
+* [Well-Architected Framework](cp_wellarchitected.md)
 
 
 
