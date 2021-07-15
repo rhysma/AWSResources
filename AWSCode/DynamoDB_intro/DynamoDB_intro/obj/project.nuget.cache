@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "pn2uZmirvXRNuaRUJ5mhUsIXT1x/eWh9c9dS1Fg3XGtCpSnnv41Wj4280k13JN5YB5Xcv/qqs8KSPqYUOpX3Eg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rhysm\\OneDrive\\Documents\\GitHub\\DynamoDB_intro\\DynamoDB_intro\\DynamoDB_intro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rhysm\\.nuget\\packages\\awssdk.core\\3.3.24\\awssdk.core.3.3.24.nupkg.sha512",
+    "C:\\Users\\rhysm\\.nuget\\packages\\awssdk.dynamodbv2\\3.3.9\\awssdk.dynamodbv2.3.3.9.nupkg.sha512",
+    "C:\\Users\\rhysm\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

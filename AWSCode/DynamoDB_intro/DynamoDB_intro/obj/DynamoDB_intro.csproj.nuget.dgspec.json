@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rhysm\\OneDrive\\Documents\\GitHub\\DynamoDB_intro\\DynamoDB_intro\\DynamoDB_intro.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rhysm\\OneDrive\\Documents\\GitHub\\DynamoDB_intro\\DynamoDB_intro\\DynamoDB_intro.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rhysm\\OneDrive\\Documents\\GitHub\\DynamoDB_intro\\DynamoDB_intro\\DynamoDB_intro.csproj",
+        "projectName": "DynamoDB_intro",
+        "projectPath": "C:\\Users\\rhysm\\OneDrive\\Documents\\GitHub\\DynamoDB_intro\\DynamoDB_intro\\DynamoDB_intro.csproj",
+        "packagesPath": "C:\\Users\\rhysm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rhysm\\OneDrive\\Documents\\GitHub\\DynamoDB_intro\\DynamoDB_intro\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rhysm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.3.24, )"
+            },
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.3.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
