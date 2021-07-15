@@ -13,7 +13,7 @@ Notes and resources for studying for the AWS Certified Developer Exam
 * [Cloud Migration and Deployment Strategies](/dev_migration.md)
 * [From Monoliths to Microservices](/dev_tech.md)
 * [Intro to Cloud9](/dev_cloud9.md)
-* [Identity Access Management](/dev_Iam.md)
+* [Identity Access Management](dev_Iam.md)
 
 
 
