@@ -17,6 +17,12 @@
 * Maintain - After code is deployed, it must be monitored in production to determine if everything works as expected.
 
 ## Steps to get started developing on AWS
+* Set up an AWS account
+* Set up AWS Permissions (IAM)
+     * IAM is a web service that helps you securely control access to AWS resources for your users. You use IAM to control who can use your AWS resources (authentication) and what resources they can use and in what ways (authorization).IAM enables you tocreate and manage AWS usersand groups.With IAM, you can set up roles and policies to control access to AWS services. A role has policies that grant access to specific services and operations.IAM also enables identity federationbetween your corporate directory and AWS services. 
+* AWS IDE Toolkits / Install dev environment
+* Interact with AWS services with AWS SDKs and CLI
+
 ## Fundamentals of working with AWS software development kits (SDKs)
 ## Errors and exceptions
 ## Introduction to AWS X-Ray
