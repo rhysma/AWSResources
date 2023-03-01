@@ -15,7 +15,7 @@
 
 ### SDLC Methodologies
 * Waterfall (or traditional) methodology: This is often considered the classic approach to the SDLC. The waterfall model describes a sequential development method in which each development phase has distinct goals and tasks that must completed before the next phase can begin. Under this paradigm, product teams might not hear back from customers for months, and often not until the product is commercialized.
-* Agilesoftware developmentmethodology:Agile is a new conceptual framework that supports fast-paced, iterative software development. Under this new paradigm, product teams push their work to customers as quickly as possible so that they can collect feedback and improve the previous iteration of their products. Concepts such as minimum viable product (MVP), release candidate, velocity, etc. are all derived from this new approach. There are a number of agile software developmentmethodologies, e.g., Crystal methods, Dynamic Systems Development Method (DSDM), and Scrum. Under agile, software is developed iteratively in short time periods called sprints, which typically last 1 –4 weeks.
+* Agile software development methodology: Agile is a new conceptual framework that supports fast-paced, iterative software development. Under this new paradigm, product teams push their work to customers as quickly as possible so that they can collect feedback and improve the previous iteration of their products. Concepts such as minimum viable product (MVP), release candidate, velocity, etc. are all derived from this new approach. There are a number of agile software developmentmethodologies, e.g., Crystal methods, Dynamic Systems Development Method (DSDM), and Scrum. Under agile, software is developed iteratively in short time periods called sprints, which typically last 1 –4 weeks.
 
 ### Five Phases of Software Development
 * Code - developers write application source code and check changes into a source code repository, such as a Git repository or AWS CodeCommit. Many teams use code reviews to provide peer feedback of code quality before they ship code into production. Other teams use pair programming as a way to provide real-time peer feedback.
@@ -69,7 +69,6 @@ Example - $ aws ec2 stop-instances --instance-id i1234567890abcdef0
 * No cost
 * Preinstall with AWS CLI, SDKs and other helpful tools
 
-
 ## Fundamentals of working with the SDK
  * Supports many languages. 
  * Mobile SDK for mobile frameworks
@@ -98,20 +97,4 @@ AWS SDKs have two levels of APIs
      * Java, .NET and Xamarin - AmazonServiceException or AmazonClientException
      * Python - Botocore.exceptions.ClientError
      * JavaScript - Asynchronous callback function 
-
-
-
-
-
-     
-     
-     
-     
-    
-    
-
-
-
-
-
 
