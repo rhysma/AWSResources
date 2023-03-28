@@ -53,6 +53,35 @@ Objects in S3 are made up of object metadata. This is a set of key-value pairs t
 * Versioned buckets support object locking 
 
 
+## Protecting S3 Data and Managing Access
+
+### Data Encryption
+* In Transit
+    * Can use SSL/TLS encrypted endpoints with HTTPS
+    * Client-side encryption of data before transmission - clients must support TLS 1.0 but AWS recommends at least 1.2
+* At Rest
+    * Client-side encryption - you manage the encryption process
+    * Server-side encryption - AWS encrypts your data at the object level
+        * Amazon S3-managed keys
+        * AWS KMS-managed keys
+        * Customer-provided keys
+
+* Note - S3 will not encrypt objects in the bucket when encryption is enabled. It will only encrypt objects that are added after encyption is enabled.
+
+### Access Policies
+* Identity-based policies - attached to identies such as users, groups or roles. 
+* Resource-based policies - policies applied to resources 
+    * Access Control Lists (ACLs) - Manages access at the object level or bucket levels
+    * Use to grant basic read/write permission to other AWS accounts
+    * Bucket policies - Uses the IAM policy languge to grant granular permission to Amazon S3 resources
+* Presigned URLs
+    * Provide access to PUT or GET objects without granting permissions to perform any other actions
+    * Use the permissions of the user who creates the URL
+    * Provide security credentials, a bucket name, an object key, an HTTP method and an expiration date/time
+    * Only valid until the expiration time (max 1 week)
+
+* Cross-origin Resource Sharing (CORS) - defines a way for client web applications that are loaded in one domain to interact with resources that are in a different domain. 
+    * You can enable CORS to allow JavaScript to access resources in an S3 bucket by creating a JSON file that contains the permissions parameters. 
 
 
 
