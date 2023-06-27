@@ -20,6 +20,7 @@ Notes and resources for studying for the AWS Certified Developer Exam
 * [Identity Access Management](dev_Iam.md)
 * [Developing Flexible NoSQL Solutions](dev_nosql.md)
 * [Developing REST APIs](dev_apis.md)
+* [Developing Serverless Solutions](dev_lambda.md)
 
 
 
