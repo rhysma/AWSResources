@@ -8,6 +8,8 @@ Notes and resources for studying for the AWS Certified Developer Exam
 ## Whats on the Exam?
 * [Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf)
 
+* [Sample Exam Questions](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Sample-Questions.pdf)
+
 ## Sections
 * [Intro to Cloud for Devs](dev_intro.md)
 * [Intro to Developing for AWS](dev_introToDev.md)
@@ -17,6 +19,7 @@ Notes and resources for studying for the AWS Certified Developer Exam
 * [Developing Storage Solutions - working with S3](dev_storage.md)
 * [Identity Access Management](dev_Iam.md)
 * [Developing Flexible NoSQL Solutions](dev_nosql.md)
+* [Developing REST APIs](dev_apis.md)
 
 
 
