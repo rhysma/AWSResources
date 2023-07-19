@@ -119,6 +119,11 @@ It always takes two objects:
 
 These configurations can affect your billing. With lambda you are charged based on the total number of requests across all your functions. You are also charged based on the duration. The price depends on the amount of memory that you allocate to your function. 
 
+In Lambda, concurrency is the number of in-flight requests your function is handling at the same time. There are two types of concurrency controls available:
+ * Reserved concurrency – Reserved concurrency is the maximum number of concurrent instances you want to allocate to your function. When a function has reserved concurrency, no other function can use that concurrency. There is no charge for configuring reserved concurrency for a function.
+
+ * Provisioned concurrency – Provisioned concurrency is the number of pre-initialized execution environments you want to allocate to your function. These execution environments are prepared to respond immediately to incoming function requests. Configuring provisioned concurrency incurs charges to your AWS account.
+
 Lambda provides resource-related configurations to help control how lambda interactions with other AWS resources and to adapt to different use cases
 * Triggers
 * Permissions
@@ -152,7 +157,7 @@ Code-related configurations
 Deployment options:
 * zip archive - choose a runtime when you create the function. Compress files for application code and dependencies and upload them to lambda
      * Use the lambda console editor - if your code does not required libraries other than AWS
-     * Upload from your IDE - used when your code requires custom libraries
+     * Upload from your IDE - used when your code requires custom libraries (50 MB limit)
      * Compress and upload to an S3 bucket. You can then provide lambda with the bucket information.
 * Container image - Choose a runtime and linux distro when creating the image. Package your code and dependencies as a container image. Upload the image to your container registry that is hosted on the Elastic Container Registry
 
@@ -164,3 +169,4 @@ Deployment Package Limits
 
 Versioning
 * You can create different versions of your function to work with your development workflow. 
+
