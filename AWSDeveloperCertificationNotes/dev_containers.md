@@ -80,14 +80,53 @@ The Amazon EC2 launch type is useful when you want more control over the infrast
 For more information about AWS Fargate, [see the product page](https://aws.amazon.com/fargate/)
 [For more information about the Fargate and EC2 launch types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html.AWS)
 
+### Amazon Elastic Kubernetes Service (EKS)
+* Managed service that runs Kubernetes on the AWS Cloud
+* Built with the Kubernetes community
+* Secure by default
+
+Kubernetes is an open-source container management platform that you can use to deploy and manage containerized applications at scale.
+* Kubernetes manages clusters of EC2 instances, and it runs containers on those instances with processes for deployment, maintenance, and scaling
+* By using Kubernetes, you can run any type of containerized application by using the same toolset on premises and in the cloud
+* When you select Amazon EKS as your container management service, you provision an Amazon EKS cluster and deploy Amazon EC2 or Fargate worker nodes (that is, worker machines) for your Amazon EKS cluster. You then connect to Amazon EKS and run your Kubernetes applications.
 
 
+For more information about Amazon EKS, [see the product page](https://aws.amazon.com/eks/).
 
+## Deploying Applications with Elastic Beanstalk
 
+### AWS Elastic Beanstalk
+* Service for deploying and scaling web applications and services
+* Automatically handles deployment details like capacity provisioning, loading balancing, automatic scaling, and application health monitoring
+* Provides a variety of platforms on which to build your applications
+* Use to manage all of the resources that run your applications as an environment
 
+Elastic Beanstalk Components
+* Application - logical collection of beanstalk components (like a folder)
+* Application version - Specific, labeled iteration of deployable code for a web application
+* Environment - Collection of AWS resources that run an application version
+* Environment tier - Designation of type of application that the environment runs. Determines what resources EB provisions to support it
+* Environment configuration - Collection of parameters and settings that define how an environment and it's associated resources behave
+* Saved configuration - Template that you can use as a starting point for creating unique environment configurations
+* Platform - Combination of OS, programming language runtime, web server, application server, EB components,. You design and target your web application to a platform
+* EB CLI - CLI for EB that provides interactive commands for creating, updating, and monitoring environments. 
+
+#### Elastic Beanstalk Permissions
+The Elastic Beanstalk permissions model requires you to assign two roles when creating an environment: the service role and the instance profile.
+* Service Role - Elastic Beanstalk assumes the service role to use other AWS services on your behalf.
+* Instance Profile - An instance profile is a container for an IAM role that can pass role information to an EC2 instance when the instance starts.
+
+#### Elastic Beanstalk Deployment Policies
+Elastic Beanstalk provides several options for processing deployments, including deployment policies (all at once, rolling, rolling with additional batch, immutable, and traffic splitting). It also includes options that you can use to configure batch size and health check behavior during deployments. 
+
+Methods:
+* All at once - deploys the new version to each instance. Requires some downtime but is the quickest deployment method
+* Rolling - Deploys to a batch of instances at a time. Avoids downtime. Minimizes reduced availability. Longer deployment
+* Rolling with batch - Launches an extra batch of instances, then performs a rolling deployment. Avoids reduced availability. Longer deployment than rolling.
+* Immutable - Launches a second Auto Scaling Group and serves traffic to both old and new versions until the new instances pass health checks. Ensures the new version always goes on new instances. Allows for quick and safe rollback but longer deployment time.
+* Traffic splitting - Launches a full set of new instances like an immutable deployment. Tests the health of the new version by using a portion of traffic while keeping the rest of the traffic served by the old version. Supports canary testing. No interruption of service if you must roll back. 
      
-     
-     
+Choose the method that makes the most sense for your use case. Consider how fast you can make updates compared to how much tolerance your users have for issues with a new version and downtime during updates.
      
     
     
