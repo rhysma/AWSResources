@@ -21,7 +21,7 @@ Benefits:
 * Better resource utilization and efficiency
 
 Docker Container Components
-* Dockerfile - Plain text file that provides instructions to create a container image
+* Dockerfile - Plain text file that provides instructions to create a container image. Each instruction in the file creates a read-only layer in the container image.
 * Container image - Read-only template that is used to create writable containers
 * Container - Runnable instance of an image
 * Container layer - Thin read/write layer that is used to make changes to the running container
@@ -31,6 +31,9 @@ Docker Container Components
 You can run Docker CLI commands from a Bash terminal to manage your Docker images and containers.
 
 For example, you can build an image from a Dockerfile by running docker build. You can then verify your image by running docker images. To launch a container from the image, run docker run. To verify that the container is running, enter docker ps.
+
+Example: This docker CLI command creates a container named my_app_1 from the image named node_app
+docker run --name my_app_1 node_app
 
 [For more information about Docker CLI commands](https://docs.docker.com/engine/reference/commandline/cli/)
 
