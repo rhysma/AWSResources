@@ -23,6 +23,7 @@ Notes and resources for studying for the AWS Certified Developer Exam
 * [Developing Serverless Solutions](dev_lambda.md)
 * [Containers and Container Services](dev_containers.md)
 * [Caching Information for Scalability](dev_cache.md)
+* [Developing with Messaging Services](dev_messaging.md)
 
 
 

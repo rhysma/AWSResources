@@ -80,3 +80,148 @@ With a cache miss, three trips are related to the request. You must send the ini
      * A cache miss might happen if the desired value is not in the cache or the requested key has expired (TTL has expired). 
 
 Cache expiration can get complex quickly. In a real application, a given page or screen often caches many different kinds of data at the same time. For example, these types of data can include profile data, top news stories, recommendations, comments—all of which have different update methods.
+
+## Challenges of Serving data globally
+
+When someone browses your website or uses your application, the request is routed through many different networks to reach your origin server. The origin server (or origin) stores the original, definitive versions of your objects (for example, webpages, images, or media files). The number of network hops and the distance that the request must travel significantly affect the performance and responsiveness of your website. Further, network latency is different depending on geographic location, which is where a content delivery network (CDN) comes in.
+
+### What is a CDN?
+
+A Content Delivery Network (CDN) is a globally distributed system of caching servers. It copies commonly requested files (static content such as HTML, CSS, JavaScript, etc..) that the application origin server is hosting. It delivers a local copy of the requested content from a cache edge or Point of Presence (POP). 
+
+CDNs also deliver dynamic content that is unique to the requester and not cacheable. Having a CDN deliver dynamic content improves application performance and scaling.
+
+## Amazon CloudFront
+* A fast content delivery network service that securely delivers data, videos, and applications, and APIs to customers globally with low latency and high transfer speeds. 
+    * Optimized for performance and scale
+    * Built-in security features
+    * Deeply integrated with AWS Services
+    * Highly customizable
+
+CloudFront integrates with AWS Shield to provide built-in security against distributed denial of service (DDOS) attacks
+
+[More information about Amazon CloudFront](https://aws.amazon.com/cloudfront/).
+
+#### How CloudFront Works
+
+1. A user requests files
+2. DNS routes to the best CloudFront edge location
+3. CloudFront checks its cache and returns the requested files and requests from the origin
+4. The origin server sends the requested files back to the edge location
+5. CloudFront forwards the files to the user and adds the files to the cache
+
+The cache key is the unique identifier for every object in the cache, and it determines whether a viewer request results in a cache hit. A cache hit occurs when a viewer request generates the same cache key as a prior request, and the object for that cache key is in the edge location’s cache and valid. When a cache hit occurs, the object is served to the viewer from a CloudFront edge location.
+
+CloudFront Distribution Types
+* Web Content - Used for serving content over HTTP or HTTPS such as static and dynamic content. Origin can be an HTTP server or an S3 bucket
+* Video on demand - Used for video content that users can watch at any time. Videos must be encoded to support streaming. The Origin can be an HTTP server or an S3 bucket
+* Live event - Used to stream live events. Videos must be encoded and compressed for viewing devices. The origin can be AWS Elemental MediaStore or Elemental MediaPackage.
+
+When using CloudFront to distribute your content, you create a distribution to tell CloudFront where you want content to be delivered from. This information tells CloudFront which origin servers to get your files from, and the details about how to track and manage content delivery. Then CloudFront uses edge servers that are close to your viewers to deliver that content quickly when someone wants to see it or use it.
+
+You can use distributions to serve the following content over HTTP or HTTPS:
+* Static and dynamic download content, such as .html, .css, .js, and image files.
+* Video on demand in different formats, such as Apple HTTP Live Streaming (HLS) and Microsoft Smooth Streaming.
+* A live event, such as a meeting, conference, or concert, in real time. For live streaming, you can create the distribution automatically by using an AWS CloudFormation stack.
+
+CloudFront assigns a domain name to your new distribution and sends your distribution’s configuration to all of its edge locations.
+
+#### Understanding the cache key
+With CloudFront, you can control the cache key for objects that are cached at CloudFront edge locations. The cache key is the unique identifier for every object in the cache. 
+
+Hit Ratio - You can get better performance from your website or application when you have a higher cache hit ratio. This means a higher proportion of viewer requests result in a cache hit. You can improve your cache hit ratio by including only the minimum necessary values in the cache key. 
+
+By default the CloudFront distribution includes the following information:
+* The domain name of the CloudFront distribution (for example, d111111abcdef8.cloudfront.net)
+* The URL Path of the requested object (for example, /content/stories/example-story.html)
+
+#### Controlling Cache Keys with Cache Policies
+To control the cache key, you use a CloudFront cache policy. You attach a cache policy to one or more cache behaviors in a CloudFront distribution. 
+
+A cache policy contains settings that are categorized into:
+* Policy information - describes the policy. You can set the name of the policy which is used to attach the policy to a caching behavior
+* Time to live (TTL) settings - Works together with the cache-control and Expires HTTP headers (if they're in the origin response). They determine how long objects in the CloudFront cache remain value before CloudFront checks the origin for updates.
+* Cache key settings - Specify the values in viewer requests that CloudFront includes in the cache key. The values that you include in the cache key are automatically included in the requests that CloudFront sends to the origin, which are called origin requests. 
+
+You can control how long your files stay in CloudFront cache before CloudFront forwards another request to your origin. 
+* Reducing the duration means you can serve dynamic content
+* Increasing the duration means that your users get better performance because your files are more likely to be served directly from the edge cache. A longer duration also reduces the load on your origin. 
+
+Typically, CloudFront serves a file from an edge location until the cache duration that you specified passes—that is, until the file expires. After it expires, the next time the edge location gets a user request for the file, CloudFront forwards the request to the origin server. In this way, it can verify that the cache contains the latest version of the file.
+
+The response from the origin depends on whether the file has changed:
+* If the CloudFront cache already has the latest version, the origin returns a status code 304 Not Modified
+* If the CloudFront cache does not have the latest version, the origin returns a status code 200 OK and the latest version of the file. 
+
+Each file in the cache expires automatically after 24 hours by default but you can change this default behavior in two ways:
+* You can change the cache duration for all files that match the same path pattern
+* You can change the cache duration for an individual file
+
+To control object caching, the Cache-Control max-age directive is recommended instead of the Expires header field. If you specify values both for Cache-Control max-age and for Expires, CloudFront uses only the value of Cache-Control max-age.
+
+### Using CloudFront to accelerate S3 file transfer
+Another way that CloudFront and S3 work together is the option to use S3 Transfer Acceleration.
+* This bucket-level feature uses CloudFront's globally distributed edge locations to accelerate files transfers between a client and an S3 bucket over a long distance.
+* As the data arrives at an edge location, data is routed to S3 over an optimized network path
+
+You might want to use Transfer Acceleration for various reasons:
+* Your customers upload to a centralized bucket from all over the world
+* You transfer GBs to TBs of data on a regular basis across continents
+* You can't use all of your available bandwidth over the internet when uploading to S3
+
+This feature incurs an additional cost. However, depending on the locations of the client and the bucket, the file transfer might not be faster with this feature turned on. In general, the farther away the client is from an Amazon S3 Region, the greater is the speed improvement from using Amazon S3 Transfer Acceleration.
+
+### Customizing at the edge with functions
+You can write your own code to customize how your CloudFront distributions process HTTP requests and responses. The code that you write and attach to your CloudFront distribution is called an edge function. 
+
+CloudFront provides two ways to write and manage edge functions:
+* Lambda@Edge - An extension of AWS Lambda that offers powerful and flexible computing for complex functions and full application logic closer to your viewers. Highly secure. Run in a Node.js or Python runtime environment. Use Lambda@Edge if you need access to the body of HTTP requests. 
+* CloudFront functions - Lightweight Javascript functions for high-scale, latency-sensitive CDN customizations. The CloudFront Functions runtime environment offers sub-millisecond startup times, scales immediately to handle millions of requests per second, and is highly secure.
+
+#### Choosing between Lambda@Edge and CloudFront Functions
+
+Generally speaking, Lambda@Edge gives you more options and capacity for creating edge functions. However, CloudFront Functions gives you a quick way to handle lightweight functions at the edge at about one-sixth the cost of Lambda@Edge, all within CloudFront.
+
+Lambda@Edge is a good choice for functions that have these characteristics: 
+* Take milliseconds or more to complete, or require adjustable memory or CPU•Depend on third-party libraries, including the AWS SDKs, for integration with other AWS services 
+* Require network access to use external services for processing
+* Require file system access or access to the body of HTTP requests
+
+CloudFront Functions is a good choice for these example use cases:
+* Cache key normalization
+* Header manipulation
+* Header URL redirects 
+* Request authorization
+
+## Caching Strategies
+
+There are two primary caching strategies
+* Lazy Loading 
+    * The cache is updated only when necessary (hit or miss)
+    * Use when data will be read often but written infrequently
+    * Example: User profile information
+
+Advantages
+* Avoids filling up the cache with data that isn't requested
+* Node failures are not fatal
+
+Disadvantages
+* Cache miss penalty and potential to get stale data
+
+* Write-through
+    * The cache is updated whenever data is written to the database
+    * Use when data must be updated in real time
+    * Examples: Top 100 game leaderboard or top 10 most popular news stories
+
+Advantages
+* Data in the cache is never stale
+
+Disadvantages
+* Write penalty - Every write involves two trips - a write to the cache and a write to the database
+* Missing data - When a new node is created to scale up or replace a failed node, the nodes does not contain all of the data. 
+* Unused data - Since most data is never read, the cluster could have a large quantity of data that is never used
+* Cache churn - The cache might be updated often if certain records are updated repeatedly.
+
+
+
+
