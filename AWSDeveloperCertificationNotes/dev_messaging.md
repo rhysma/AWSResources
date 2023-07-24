@@ -145,4 +145,30 @@ Streams Overview
 * The data records in a data stream are distributed into shards.
 * After a record is added to the stream, the record is available for a specified retention period, which you can set per stream. 
 * The Kinesis Data Streams service adds shards to scale horizontally.
+    * When you create a stream, you specify the number of shards for the stream. The total capacity of a stream is the sum of the capacities of its shards.
+* Each shard has a uniquely identified sequence of data records, and each data record has a sequence number that Kinesis assigns.
+* A partition key is used to group data by shard within a stream.
+* A consumer is an application that polls the data stream and processes the data from a Kinesis data stream.
+    * You can have multiple consumers on a data stream.
+    * When you have multiple consumers, they share the read throughput of the stream among them. An option called enhanced fanout lets you give each consumer its own allotment of read throughput.
 
+#### Other Kinesis Data Streaming Services
+
+Amazon Kinesis Data Firehose
+* Deliver streaming data to data stores without writing consumer applications for your stream
+* Automatically convert incoming data to open and standards based before the data is delivered
+
+Amazon Kinesis Data Analytics
+* Perform real-time analysis on data in the stream using SQL queries before persisting the data
+* Use Apache Flink, Java, Scala or Python for your analysis applications
+
+#### Comparison of Queues and Streams
+Data Value
+    * Queues - The value comes from processing individual messages
+    * Streams - The value comes from aggregating messages to get actionable data
+Message rate
+    * Queues - The message rate is variable
+    * Streams - The message rate is continuous and high volume
+Message processing
+    * Queues - Messages are deleted after a consumer successfully processes them
+    * Streams - Messages are available to multiple consumers to process in parallel and each consumer maintains a points but does not delete records
