@@ -24,6 +24,8 @@ Notes and resources for studying for the AWS Certified Developer Exam
 * [Containers and Container Services](dev_containers.md)
 * [Caching Information for Scalability](dev_cache.md)
 * [Developing with Messaging Services](dev_messaging.md)
+* [Defining Workflows to Orchestrate Functions](dev_functions.md)
+* [Developing Secure Applications on AWS](dev_secureapps.md)
 
 
 
