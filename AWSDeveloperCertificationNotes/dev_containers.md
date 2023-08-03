@@ -30,7 +30,7 @@ Docker Container Components
 ### Docker CLI Commands
 You can run Docker CLI commands from a Bash terminal to manage your Docker images and containers.
 
-For example, you can build an image from a Dockerfile by running docker build. You can then verify your image by running docker images. To launch a container from the image, run docker run. To verify that the container is running, enter docker ps.
+For example, you can build an image from a Dockerfile by running a docker build. You can then verify your image by running docker images. To launch a container from the image, run docker run. To verify that the container is running, enter docker ps.
 
 Example: This docker CLI command creates a container named my_app_1 from the image named node_app
 docker run --name my_app_1 node_app
@@ -66,19 +66,19 @@ For more information about Amazon ECR, [see the product page](https://aws.amazon
 The following procedure is a high-level overview of Amazon ECS
 * First, container images are pulled from a registry. This registry can be Amazon ECR—which is one of many AWS services that integrate with Amazon ECS—or a third-party or private registry.
 * Next, you define your application. Customize the container images with the necessary code and resources, and then create the appropriate configuration files to group. Then, define your containers as short-running tasks or long-running services within Amazon ECS.
-* When you are ready to bring your services online, you select one of two launch types: AWS Fargate or Amazon EC2. You can mix and match the two launch types as needed within your application. The next slide highlights distinctions between these two launch types.
+* When you are ready to bring your services online, you select one of two launch types: AWS Fargate or Amazon EC2. You can mix and match the two launch types as needed within your application. The next slide highlights the distinctions between these two launch types.
 * Finally, you can use Amazon ECS to manage your containers. Amazon ECS scales your application and manages your containers for availability.
 
 #### Launch Types
 
 The Fargate launch type provides a near-serverless experience, where AWS completely manages the infrastructure that supports your containers. 
-* AWS manages the placement of your tasks on instances, and makes sure that each task has the appropriate amount of CPU and memory. 
+* AWS manages the placement of your tasks on instances and makes sure that each task has the appropriate amount of CPU and memory. 
 * With Fargate, you can focus on the tasks and the application architecture, instead of worrying about the infrastructure.
 
 The Amazon EC2 launch type is useful when you want more control over the infrastructure that supports your tasks. 
 * You create and manage clusters of EC2 instances to support your containers.
 * You also define the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements.
-* You have more granular control over your environment without operating your own cluster management and configuration management systems, or worrying about scaling your management infrastructure.
+* You have more granular control over your environment without operating your own cluster management and configuration management systems or worrying about scaling your management infrastructure.
 
 For more information about AWS Fargate, [see the product page](https://aws.amazon.com/fargate/)
 [For more information about the Fargate and EC2 launch types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html.AWS)
@@ -90,7 +90,7 @@ For more information about AWS Fargate, [see the product page](https://aws.amazo
 
 Kubernetes is an open-source container management platform that you can use to deploy and manage containerized applications at scale.
 * Kubernetes manages clusters of EC2 instances, and it runs containers on those instances with processes for deployment, maintenance, and scaling
-* By using Kubernetes, you can run any type of containerized application by using the same toolset on premises and in the cloud
+* By using Kubernetes, you can run any type of containerized application by using the same toolset on-premises and in the cloud
 * When you select Amazon EKS as your container management service, you provision an Amazon EKS cluster and deploy Amazon EC2 or Fargate worker nodes (that is, worker machines) for your Amazon EKS cluster. You then connect to Amazon EKS and run your Kubernetes applications.
 
 
@@ -105,10 +105,10 @@ For more information about Amazon EKS, [see the product page](https://aws.amazon
 * Use to manage all of the resources that run your applications as an environment
 
 Elastic Beanstalk Components
-* Application - logical collection of beanstalk components (like a folder)
+* Application - a logical collection of beanstalk components (like a folder)
 * Application version - Specific, labeled iteration of deployable code for a web application
 * Environment - Collection of AWS resources that run an application version
-* Environment tier - Designation of type of application that the environment runs. Determines what resources EB provisions to support it
+* Environment tier - Designation of the type of application that the environment runs. Determines what resources EB provisions to support it
 * Environment configuration - Collection of parameters and settings that define how an environment and it's associated resources behave
 * Saved configuration - Template that you can use as a starting point for creating unique environment configurations
 * Platform - Combination of OS, programming language runtime, web server, application server, EB components,. You design and target your web application to a platform
