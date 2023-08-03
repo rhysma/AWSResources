@@ -2,12 +2,12 @@
 ## From Monoliths to Microservices
 
 ### Traditional Monolithic Architecture
-* Each application has all processes tightly coupled and run as a single service
+* Each application has all processes tightly coupled and runs as a single service
 * If one process of an application experiences a spike in demand, the entire architecture must be scaled
 * Adding or improving features becomes more complex as the code-base grows
 * Limits experimentation and makes it difficult to implement new ideas
 * Adds risk for application availability since you have many dependent and tightly coupled processes
-* Increases the implace of a single process failure
+* Increases the place of a single process failure
 
 ### Microservice Architecture
 * Design approach for building a single application as a set of small services
@@ -21,7 +21,7 @@
 #### Benefits of a Microservice Architecture
 * Agility - Helps small teams be more independent and take ownership of their services. Shortens development cycles.
 * Flexible Scaling - Allows each service to be independently scaled to meet demand. Allows you to right-size infrastructure needs.
-* Easy deployment - Enables continuous integration and continuous delivery, making it easy to try new ideas. Easy to roll-back if something doesn't work. Low cost of failure allow for experimentation.
+* Easy deployment - Enables continuous integration and continuous delivery, making it easy to try new ideas. Easy to roll back if something doesn't work. The low cost of failure allows for experimentation.
 * Technological Freedom - Teams have the freedom to choose the best tool to solve their specific problems. 
 * Reusable Code - Dividing software into small, well-defined modules. Enables teams to use functions for multiple purposes. 
 * Resilience - Service independence increases an application's resistance to failure. 
