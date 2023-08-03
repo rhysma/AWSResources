@@ -1,14 +1,14 @@
 ## Developing Secure Applications on AWS
 
  Previously learned about two services that are core to AWS security:
- * With Amazon Virtual Private Cloud (Amazon VPC), you secure your networks and subnets, and protect your AWS resources in the cloud.
+ * With Amazon Virtual Private Cloud (Amazon VPC), you secure your networks and subnets and protect your AWS resources in the cloud.
  * With AWS Identity and Access Management (IAM), you control access to AWS resources through policies that grant permissions to users, groups, and roles.
 
  ### Securing Network Connections
 
- Transport Layer Security (TLS) and it's predecessor Secure Sockets Layer (SSL) are open standards that use public and private certificates to establish identity aof websites over the internet and resources on private networks.
+ Transport Layer Security (TLS) and its predecessor Secure Sockets Layer (SSL) are open standards that use public and private certificates to establish the identity of websites over the internet and resources on private networks.
 * TLS and SSL protocols encrypt network communications between connected resources
-* HTTP connections might use either SSL or TLS (TLS being more secure)
+* HTTP connections might use either SSL or TLS (TLS is more secure)
 
 Example with Elastic Load Balancing
 * ELB terminates HTTPS and TLS traffic from clients at the load balancer
@@ -16,29 +16,29 @@ Example with Elastic Load Balancing
 * Keeps the work of handing TLS termination off of the EC2 instance
 
 CloudFront
-* You can configure CloudFront to require viewers use HTTPS so that connections are encrypted when CloudFront communicates with viewers
+* You can configure CloudFront to require viewers to use HTTPS so that connections are encrypted when CloudFront communicates with viewers
 * You can configure CloudFront to use HTTPS with your origin so that connections are encrypted when CloudFront communicates with your origin
 * CloudFront performs SSL/TLS negotiation between the viewer and CloudFront and between CloudFront and the origin if the response is not already cached
 
 #### Certificate Authorities
 
-A Certificate Authority (CA) issues certificates to specific domains. When a domain presents a certificate that trusted CA issued, your browser or application knows it's safe to make the connection.
+A Certificate Authority (CA) issues certificates to specific domains. When a domain presents a certificate that a trusted CA issued, your browser or application knows it's safe to make the connection.
 
 Steps between Clients and Servers
-1. CA issues certificate
+1. CA issues a certificate
 2. Client requests identification
-3. Server sends certificate and public key
+3. Server sends the certificate and public key
 4. Client checks - is issuing CA trusted?
-5. Client sends encrypted session key
-6. Acknowledgement encrypted with session key
-7. All data now encrypted with session key
+5. Client sends an encrypted session key
+6. Acknowledgement encrypted with the session key
+7. All data is now encrypted with the session key
 
 #### Challenges with managing certificates
-* Security - Certificates can be vulnerable for things such as name mismatch, use of internal names, missing or misconfigured fields/values, outdated or weak hashing algorithms, weak keys, weak cyber suites that compromise endpoints
+* Security - Certificates can be vulnerable to things such as name mismatch, use of internal names, missing or misconfigured fields/values, outdated or weak hashing algorithms, weak keys, weak cyber suites that compromise endpoints
 * Discovery - It is not practical to manually gather details about all of the individual certificates in your network when you have hundreds or thousands of them
-* Rotations an renewals - Manage management of certificate expirations is prone to error and could cause you to miss rotations and renewals
+* Rotations and renewals - Manage management of certificate expirations is prone to error and could cause you to miss rotations and renewals
 * Authorization - You need to be able to verify that someone is authorized to approve and issue a certificate
-* Cost - It can be expensive to manage certificates. You must pay a fee to validate them. You must consider support costs, legal costs (insurance, warranties, etc...), ownership or control costs (fees for root-embedding), and infrastructure costs
+* Cost - It can be expensive to manage certificates. You must pay a fee to validate them. You must consider support costs, legal costs (insurance, warranties, etc...), ownership or control costs (fees for root embedding), and infrastructure costs
 
 ### Using AWS Certificate Manager (ACM)
 
@@ -84,10 +84,10 @@ AWS STS trusted users can be IAM users or federated identities:
 * AssumeRoleWithSAML - Returns a set of temporary security credentials for federated users who are authenticated by an organization's existing identity system
 * AssumeRoleWithWebIdentity - Returns a set of temporary security credentials for federated users who are authenticated through a public IdP such as Login with Amazon, Google, Facebook, etc...
 * GetFederationToken - Returns a set of temporary security credentials for federated users. 
-* GetSessionToken - Returns a set of temporary security credentials for existing IAM user. 
+* GetSessionToken - Returns a set of temporary security credentials for existing IAM users. 
 
 ### Authenticating with Amazon Cognito
-Cognito provides authentication, authorization and user management for your web and mobile applications
+Cognito provides authentication, authorization, and user management for your web and mobile applications
 * Authenticates user identities through external IdPs that support SAML, or OIDC, Social IdPs, and custom IdPs.
 * Provides temporary security credentials to access AWS resources and services
 
@@ -110,7 +110,7 @@ You can customize your authentication flow with Lambda triggers. These triggers 
 
 Identity Pools (federated identities)
 * Provide users with temporary access credentials
-* Enable creation of unique identities and federate them with various providers
+* Enable the creation of unique identities and federate them with various providers
 
 You can use identity pools and user pools separately or together
 
@@ -130,7 +130,7 @@ By design, tokens live for a relatively short time. You can choose how long your
 
 Amazon Cognito identity pools support the following IdPs:
 * Amazon Cognito user pools
-* Public IdPs,such as Login with Facebook, Google, or Amazon
+* Public IdPs, such as Login with Facebook, Google, or Amazon
 * SAML IdPs
 * OIDC IdPs
 * Developer-provided authenticated identities
