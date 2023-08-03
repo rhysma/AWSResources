@@ -2,11 +2,11 @@
 There are six common strategies that an organization can use to migrate its applications to the cloud
  * Rehosting
     * Also called Lift-and-Shift
-    * Move legacy applications from on-prem to cloud without changing core architecture, functionality, or performance
+    * Move legacy applications from on-prem to the cloud without changing core architecture, functionality, or performance
     * The goal is to migrate and scale quickly to meet a business use-case  
  * Replatforming
     * Also called Lift-and-Reshape
-    * You might make a few cloud optimizations to achieve a tanigible benefit
+    * You might make a few cloud optimizations to achieve a tangible benefit
     * You're not changing the core architecture of the application 
  * Repurchasing
     * Also called Replace-Drop-and-Shop
@@ -30,7 +30,7 @@ There are two deployment strategies for cloud applications
    * Cloud-based applications are either created in the cloud (cloud native)
    * Or they have been fully migrated to take advantage of the benefits of cloud computing 
 
-* Hybrid - The deployment can connect between infrastructure and applications in the cloud and in on-prem datacenters. 
+* Hybrid - The deployment can connect infrastructure and applications in the cloud and in on-prem data centers. 
    * This kind of deployment enables an organization to extend and grow its infrastructure into the cloud by connecting cloud and internal systems
    * [The hybrid cloud](https://aws.amazon.com/hybrid/)
 
