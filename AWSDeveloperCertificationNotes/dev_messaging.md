@@ -164,11 +164,11 @@ Amazon Kinesis Data Analytics
 
 #### Comparison of Queues and Streams
 Data Value
-    * Queues - The value comes from processing individual messages
-    * Streams - The value comes from aggregating messages to get actionable data
+* Queues - The value comes from processing individual messages
+* Streams - The value comes from aggregating messages to get actionable data
 Message rate
-    * Queues - The message rate is variable
-    * Streams - The message rate is continuous and high volume
+* Queues - The message rate is variable
+* Streams - The message rate is continuous and high volume
 Message processing
-    * Queues - Messages are deleted after a consumer successfully processes them
-    * Streams - Messages are available to multiple consumers to process in parallel and each consumer maintains a points but does not delete records
+* Queues - Messages are deleted after a consumer successfully processes them
+* Streams - Messages are available to multiple consumers to process in parallel and each consumer maintains a points but does not delete records
