@@ -49,8 +49,8 @@ More Information [Partitions and Data Distribution](https://docs.aws.amazon.com/
 You can use a secondary index to perform queries on attributes that aren’t part of the table’s primary key. With a secondary index, you can query the data in the table by using an alternate key, in addition to queries against the primary key.
 
 DynamoDB supports two types of secondary indexes:
-* Global secondary index: An index with a partition key and a sort key, both of which can be different from the keys in the base table. A global secondary index is considered global because queries on the index can span all the data in the base table, across all partitions. A global secondary index has no size limitations. It also has its own provisioned throughput settings for read/write activity that are separate from the throughput settings of the table. 
-* Local secondary index: An index that has the same partition key as the base table, but a different sort key. A local secondary index is local because every partition is scoped to a base table partition that has the same partition key value. As a result, the total size of indexed items for any one partition key value can't exceed 10 GB. Also, local secondary index shares provisioned throughput settings for read/write activity with the table that it indexes. 
+* Global secondary index: An index with a partition key and a sort key, both of which can be different from the keys in the base table. A global secondary index is considered global because queries on the index can span all the data in the base table, across all partitions. A global secondary index has no size limitations. It also has its own provisioned throughput settings for read/write activity that is separate from the throughput settings of the table. 
+* Local secondary index: An index that has the same partition key as the base table, but a different sort key. A local secondary index is local because every partition is scoped to a base table partition that has the same partition key value. As a result, the total size of indexed items for any one partition key value can't exceed 10 GB. Also, the local secondary index shares provisioned throughput settings for read/write activity with the table that it indexes. 
 
 Each table in DynamoDB can have up to 20 global secondary indexes (default limit) per table, and up to five local secondary indexes per table.
 
@@ -78,7 +78,7 @@ When you create an on-demand backup, a time marker of the request is cataloged. 
 
 #### Point in Time Recovery
 Automatic backups that help protect your DB table from accidental write and delete operations. With point-in-time recovery, you don't have to worry about creating, maintaining or scheduling backups.
-* These recoveries can be made to any point in time in the last 35 days
+* These recoveries can be made at any point in time in the last 35 days
 
 ### Basic Operations for Dynamo Tables
 
@@ -91,7 +91,7 @@ Four types of operations are available
 Condition expressions can be used with data operations to ensure that your operations only run under certain conditions that you specify. 
 
 #### Reading an Item
-When reading a table (using GetItem) you must specify the table name, full primary key, and partition key and sort key if it exists. By default all parts of the item are returned but you can create a projection expression to retrieve only certain attributes. You can also choose to use a strongly consistent read instead of the default. The expected result is a JSON object that contains the requested attributes.
+When reading a table (using GetItem) you must specify the table name, full primary key, and partition key and sort key if it exists. By default, all parts of the item are returned but you can create a projection expression to retrieve only certain attributes. You can also choose to use a strongly consistent read instead of the default. The expected result is a JSON object that contains the requested attributes.
 
 #### Querying a Table
 You can use the query operation to read only the items in a table or secondary index that match the primary key. The key is specified in the key condition expression. If a filter expression is specified, the query operation returns a result set, with only the items that match specified conditions. If none of the items satisfy the conditions, the operations return an empty result set. 
