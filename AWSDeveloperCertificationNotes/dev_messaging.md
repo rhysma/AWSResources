@@ -163,12 +163,12 @@ Amazon Kinesis Data Analytics
 * Use Apache Flink, Java, Scala, or Python for your analysis applications
 
 #### Comparison of Queues and Streams
-Data Value
-* Queues - The value comes from processing individual messages
-* Streams - The value comes from aggregating messages to get actionable data
-Message rate
-* Queues - The message rate is variable
-* Streams - The message rate is continuous and high volume
-Message processing
-* Queues - Messages are deleted after a consumer successfully processes them
-* Streams - Messages are available to multiple consumers to process in parallel and each consumer maintains a points but does not delete records
+* Data Value
+   * Queues - The value comes from processing individual messages
+   * Streams - The value comes from aggregating messages to get actionable data
+* Message rate
+   * Queues - The message rate is variable
+   * Streams - The message rate is continuous and high volume
+* Message processing
+   * Queues - Messages are deleted after a consumer successfully processes them
+   * Streams - Messages are available to multiple consumers to process in parallel and each consumer maintains a points but does not delete records
