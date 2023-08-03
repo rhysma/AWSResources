@@ -26,6 +26,7 @@ Notes and resources for studying for the AWS Certified Developer Exam
 * [Developing with Messaging Services](dev_messaging.md)
 * [Defining Workflows to Orchestrate Functions](dev_functions.md)
 * [Developing Secure Applications on AWS](dev_secureapps.md)
+* [Automating Deployment Using CI/CD Pipelines](dev_deployment.md)
 
 
 
