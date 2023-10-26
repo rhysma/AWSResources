@@ -1,0 +1,18 @@
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\obj\Debug\DyamoDB WinForm.csproj.AssemblyReference.cache
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\obj\Debug\DyamoDB_WinForm.Properties.Resources.resources
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\obj\Debug\DyamoDB WinForm.csproj.GenerateResource.cache
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\obj\Debug\DyamoDB WinForm.csproj.CoreCompileInputs.cache
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\DyamoDB WinForm.exe.config
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\DyamoDB WinForm.exe
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\DyamoDB WinForm.pdb
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\AWSSDK.Core.dll
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\AWSSDK.DynamoDBv2.dll
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\AWSSDK.Core.pdb
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\AWSSDK.Core.xml
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\AWSSDK.DynamoDBv2.pdb
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\AWSSDK.DynamoDBv2.xml
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\obj\Debug\DyamoDB WinForm.exe
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\obj\Debug\DyamoDB WinForm.pdb
+C:\Users\fordt\Dropbox\Software\Github\151ClassExamples\DyamoDB WinForm\DyamoDB WinForm\obj\Debug\DyamoDB_WinForm.Form1.resources
